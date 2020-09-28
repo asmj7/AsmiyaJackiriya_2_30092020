@@ -1,0 +1,130 @@
+ /* HEADER*/
+ *{
+     font-family:'Raleway', sans-serif;
+ }
+ .logo{
+    width: 95px;
+    height: 45px;
+    margin: 15px 0 0 10px;
+ }
+
+ a.log-in{
+     display: block;
+    color: #0065FC;
+    font-weight:bold;
+    margin: 28px 16px;
+    font-size: 17px;
+    float: right;
+ }
+ ul, a{
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.navigation_list{
+    display: inline-flex;
+    
+
+}
+.navigation_list,li {
+    font-size: 16px;
+}
+li.hebergements{
+    color:#0065FC;
+
+}
+
+
+/* MAIN */
+
+h1{
+    font-size: 23px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+} 
+p.description{
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+input{
+    position: relative;
+    margin-top: 15px;
+    border-radius: 15px;
+    height: 35px;
+    width: 75%;
+    border: 1px solid #D8D8D8;
+}
+.filtres{
+    margin-left: 10px;
+    font-weight: bold;
+}
+::placeholder{
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    padding-left: 10px;
+}
+
+.button_economic{
+    border-radius: 25px;
+    background-color: white;
+    border: 2px solid #c9c7c7;
+    width: 180px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.button_family{
+    border-radius: 25px;
+    background-color: white;
+    border: 2px solid #c9c7c7;
+    width: 140px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.button_romantic{
+    border-radius: 25px;
+    background-color: white;
+    border: 2px solid #c9c7c7;
+    width: 180px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: bold;
+}
+.button_animals{
+    border-radius: 25px;
+    background-color: white;
+    border: 2px solid #c9c7c7;
+    width: 200px;
+    height: 45px;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
