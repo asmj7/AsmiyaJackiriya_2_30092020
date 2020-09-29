@@ -1,111 +1,174 @@
- /* HEADER*/
- *{
-     font-family:'Raleway', sans-serif;
+/* HEADER*/
+*{
+  font-family:'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
  }
- .logo{
-    width: 95px;
-    height: 45px;
-    margin: 15px 0 0 10px;
- }
-
- a.log-in{
-     display: block;
-    color: #0065FC;
-    font-weight:bold;
-    margin: 28px 16px;
-    font-size: 17px;
-    float: right;
- }
- ul, a{
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Raleway', sans-serif;
-
+header{
+  display: flex;
+  justify-content: flex-end;
+}
+img.logo{
+ width: 90px;
+ height: 45px;
+ margin-right: auto;
+ margin-left: 20px;
+ margin-top: 13px;
+}
+ul.navigation_list{
+  display: inline-flex;
 }
 
-.navigation_list{
-    display: inline-flex;
-    
+a.log-in{
+ display: flex;
+ color: #0065FC;
+ font-weight:bold;
+ margin: 24px 30px;
+ margin-left: 50px ;
+ font-size: 17px;
+}
+nav.header{
+  display: flex;
+  padding-bottom: 10px;
+}
+nav.header, li{
+  padding-top: 13px;
+  padding-right: 25px;
+}
 
+nav.header, li:last-child{
+  padding-left: 25px;
+  padding-right: 0;
 }
-.navigation_list,li {
-    font-size: 16px;
-}
+
 li.hebergements{
-    color:#0065FC;
-
+ color:#0065FC;
+ padding-right: 25px;
+ border-top: 3px solid #0065FC;
 }
+
 
 
 /* MAIN */
 
 h1{
-    font-size: 23px;
-    margin-top: 30px;
-    margin-left: 10px;
-    margin-bottom: 10px;
+ font-size: 20px;
+ margin-top: 30px;
+ margin-left: 21px;
+ margin-bottom: 10px;
 } 
 p.description{
-    margin-left: 10px;
-    margin-top: 5px;
+ margin-left: 22px;
+ margin-top: 12px;
 }
 
 input{
-    position: relative;
-    margin-top: 15px;
-    border-radius: 15px;
-    height: 35px;
-    width: 75%;
-    border: 1px solid #D8D8D8;
+ position: relative;
+ margin: 30px 0 30px 70px;
+ height: 35px;
+ width: 230px;
+ border: 1px solid #D8D8D8;
 }
-.filtres{
-    margin-left: 10px;
-    font-weight: bold;
-}
-::placeholder{
-    font-weight: bold;
-    font-size: 15px;
-    color: black;
-    padding-left: 10px;
+.search-icon{
+  background-color: #0065FC;
+  color: white;
+  width: 95px;
+  height: 35px;
 }
 
-.button_economic{
-    border-radius: 25px;
-    background-color: white;
-    border: 2px solid #c9c7c7;
-    width: 180px;
-    height: 45px;
-    font-size: 15px;
-    font-weight: bold;
+.filtres{
+ display: block;
+ margin-left: 20px;
+ font-weight: bold;
 }
-.button_family{
-    border-radius: 25px;
-    background-color: white;
-    border: 2px solid #c9c7c7;
-    width: 140px;
-    height: 45px;
-    font-size: 15px;
-    font-weight: bold;
+.bouton-filtres{
+ display: flex;
 }
-.button_romantic{
-    border-radius: 25px;
-    background-color: white;
-    border: 2px solid #c9c7c7;
-    width: 180px;
-    height: 45px;
-    font-size: 15px;
-    font-weight: bold;
+::placeholder{
+ font-weight: bold;
+ font-size: 15px;
+ color: black;
+ padding-left: 10px;
 }
-.button_animals{
-    border-radius: 25px;
-    background-color: white;
-    border: 2px solid #c9c7c7;
-    width: 200px;
-    height: 45px;
-    font-size: 15px;
-    font-weight: bold;
-    
+
+.button-economic{
+ border-radius: 25px;
+ background-color: white;
+ border: 2px solid #c9c7c7;
+ width: 180px;
+ height: 45px;
+ font-size: 15px;
+ font-weight: bold;
 }
+.button-family{
+ border-radius: 25px;
+ background-color: white;
+ border: 2px solid #c9c7c7;
+ width: 140px;
+ height: 45px;
+ font-size: 15px;
+ font-weight: bold;
+}
+.button-romantic{
+ border-radius: 25px;
+ background-color: white;
+ border: 2px solid #c9c7c7;
+ width: 180px;
+ height: 45px;
+ font-size: 15px;
+ font-weight: bold;
+}
+.button-animals{
+ border-radius: 25px;
+ background-color: white;
+ border: 2px solid #c9c7c7;
+ width: 200px;
+ height: 45px;
+ font-size: 15px;
+ font-weight: bold;
+ 
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
 
 
 
