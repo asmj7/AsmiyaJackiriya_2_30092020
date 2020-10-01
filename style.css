@@ -7,94 +7,117 @@
   list-style: none;
   box-sizing: border-box;
  }
+ body{
+  width:85%;
+  margin-left:auto;
+  margin-right:auto;
+ }
+
 header{
   display: flex;
-  justify-content: flex-end;
 }
-img.logo{
- width: 90px;
- height: 45px;
+.logo{
+ width: 100px;
+ height: 50px;
  margin-right: auto;
- margin-left: 20px;
+ margin-left: 35px;
  margin-top: 13px;
-}
-ul.navigation_list{
-  display: inline-flex;
 }
 
 a.log-in{
  display: flex;
  color: #0065FC;
  font-weight:bold;
- margin: 24px 30px;
- margin-left: 50px ;
+ padding: 32px;
  font-size: 17px;
 }
-nav.header{
-  display: flex;
-  padding-bottom: 10px;
+nav.nav-bar{
+  margin-top: 32px;
+  font-size: 17px;
 }
-nav.header, li{
-  padding-top: 13px;
-  padding-right: 25px;
+a.hebergements{
+  padding: 32px;
+  color: #0065FC;
+  text-align: center;
+  border-top: 3px solid #0065FC;
+}
+a.activités{
+  padding: 32px;
+  color: black;
 }
 
-nav.header, li:last-child{
-  padding-left: 25px;
-  padding-right: 0;
-}
 
-li.hebergements{
- color:#0065FC;
- padding-right: 25px;
- border-top: 3px solid #0065FC;
-}
 
 
 
 /* MAIN */
 
 h1{
- font-size: 20px;
  margin-top: 30px;
- margin-left: 21px;
+ margin-left: 35px;
  margin-bottom: 10px;
 } 
 p.description{
- margin-left: 22px;
+ margin-left: 37px;
  margin-top: 12px;
+ margin-bottom: 20px;
 }
-
+.search{
+  margin-bottom: 35px;
+}
+.place-icon{
+  padding: 16px;
+  padding-right: 20px;
+  height: 50px;
+  margin-left: 35px;
+  background-color: #F0F0F0;
+  border-radius: 15px 0 0 15px;
+}
 input{
  position: relative;
- margin: 30px 0 30px 70px;
- height: 35px;
- width: 230px;
+ width: 250px;
+ height: 50px;
+ padding: 0 25px;
  border: 1px solid #D8D8D8;
 }
-.search-icon{
+.search-button{
   background-color: #0065FC;
   color: white;
-  width: 95px;
-  height: 35px;
+  padding: 0px 25px;
+  font-size: 15px;
+  height: 50px;
+  border-radius: 0 15px 15px 0;
+  border-color:#0065FC ;
+}
+
+
+
+::placeholder{
+ font-weight: bold;
+ font-size: 17px;
+ color: black;
+ padding-left: 0px;
+ text-align: left;
+}
+
+h2{
+  margin-left: 35px;
+  margin-right: 25px;
+  margin-top: 7px;
+  display: flex;
+}
+h3{
+  display: block;
+  margin-top: 10px;
 }
 
 .filtres{
- display: block;
- margin-left: 20px;
- font-weight: bold;
-}
-.bouton-filtres{
- display: flex;
-}
-::placeholder{
- font-weight: bold;
- font-size: 15px;
- color: black;
- padding-left: 10px;
+  display: flex;
+  margin-bottom: 15px;
+  
 }
 
-.button-economic{
+.economic{
  border-radius: 25px;
  background-color: white;
  border: 2px solid #c9c7c7;
@@ -102,8 +125,10 @@ input{
  height: 45px;
  font-size: 15px;
  font-weight: bold;
+ text-align: center;
+ margin-right: 25px;
 }
-.button-family{
+.family{
  border-radius: 25px;
  background-color: white;
  border: 2px solid #c9c7c7;
@@ -111,8 +136,11 @@ input{
  height: 45px;
  font-size: 15px;
  font-weight: bold;
+ text-align: center;
+ margin-right: 25px;
+
 }
-.button-romantic{
+.romantic{
  border-radius: 25px;
  background-color: white;
  border: 2px solid #c9c7c7;
@@ -120,8 +148,11 @@ input{
  height: 45px;
  font-size: 15px;
  font-weight: bold;
+ text-align: center;
+ margin-right: 25px;
+
 }
-.button-animals{
+.animals{
  border-radius: 25px;
  background-color: white;
  border: 2px solid #c9c7c7;
@@ -129,8 +160,57 @@ input{
  height: 45px;
  font-size: 15px;
  font-weight: bold;
- 
+ text-align: center;
 }
+.info{
+  margin-top: 25px;
+  margin-left: 35px;
+  margin-bottom: 35px;
+}
+.first-part{
+  display: flex;
+}
+article{
+  display: flex;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* For mobile phones: */
