@@ -9,6 +9,7 @@
  }
  body{
   width:85%;
+  min-height: 100%;
   margin-left:auto;
   margin-right:auto;
  }
@@ -46,10 +47,6 @@ a.activités{
   color: black;
 }
 
-
-
-
-
 /* MAIN */
 
 h1{
@@ -66,9 +63,7 @@ p.description{
   margin-bottom: 35px;
 }
 .place-icon{
-  padding: 16px;
-  padding-right: 20px;
-  height: 50px;
+  padding: 17px 20px;
   margin-left: 35px;
   background-color: #F0F0F0;
   border-radius: 15px 0 0 15px;
@@ -76,7 +71,7 @@ p.description{
 input{
  position: relative;
  width: 250px;
- height: 50px;
+ height: 53px;
  padding: 0 25px;
  border: 1px solid #D8D8D8;
 }
@@ -85,7 +80,7 @@ input{
   color: white;
   padding: 0px 25px;
   font-size: 15px;
-  height: 50px;
+  height: 53px;
   border-radius: 0 15px 15px 0;
   border-color:#0065FC ;
 }
@@ -106,78 +101,105 @@ h2{
   margin-top: 7px;
   display: flex;
 }
-h3{
-  display: block;
-  margin-top: 10px;
-}
-
 .filtres{
   display: flex;
   margin-bottom: 15px;
-  
 }
-
+h3{
+  display: flex;
+}
 .economic{
+ display: flex;
  border-radius: 25px;
  background-color: white;
  border: 2px solid #c9c7c7;
- width: 180px;
- height: 45px;
+ padding: 10px 20px;
+ margin-right: 40px;
  font-size: 15px;
  font-weight: bold;
  text-align: center;
- margin-right: 25px;
+ align-items: center;
 }
 .family{
+ display: flex;
  border-radius: 25px;
  background-color: white;
  border: 2px solid #c9c7c7;
- width: 140px;
- height: 45px;
+ padding: 10px 20px;
+ margin-right: 40px;
  font-size: 15px;
  font-weight: bold;
- text-align: center;
- margin-right: 25px;
-
+ align-items: center;
 }
 .romantic{
+ display: flex;
  border-radius: 25px;
+ position: relative;
  background-color: white;
  border: 2px solid #c9c7c7;
- width: 180px;
- height: 45px;
+ padding: 10px 20px;
+ margin-right: 40px;
  font-size: 15px;
  font-weight: bold;
- text-align: center;
- margin-right: 25px;
-
+ align-items: center;
 }
 .animals{
- border-radius: 25px;
- background-color: white;
- border: 2px solid #c9c7c7;
- width: 200px;
- height: 45px;
- font-size: 15px;
- font-weight: bold;
- text-align: center;
+  display: flex;
+  border-radius: 25px;
+  background-color: white;
+  border: 2px solid #c9c7c7;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
 }
 .info{
   margin-top: 25px;
   margin-left: 35px;
   margin-bottom: 35px;
 }
-.first-part{
-  display: flex;
+#first-part{
+  display: grid;
+  background-color: indianred;
+  margin-left: 35px;
 }
-article{
-  display: flex;
-  
+.title-first-part{
+  display: grid;
+  grid-area: hd;
+  width: fit-content;
+  background-color: grey;
 }
-
-
-
-
+.title{
+  margin: 0;
+  padding: 10px 0;
+  background-color: #D8D8D8;
+}
+#first-part article{
+  display: grid;
+  width: 250px;
+  height: 150px;
+}
+div.hebergements-marseille{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  width: fit-content;
+  padding: 40px;
+  padding-top: 20px;
+  border-radius: 25px;
+  background-color: #D8D8D8;
+  grid-template-areas: 
+  "hd hd hd"
+  "img img img"
+}
+.grid-image{
+  display: grid;
+  margin-top: 20px;
+  object-fit: cover;
+  border-radius: 15px;
+  width: 220px;
+  height: 130px;
+  border: 7px solid white;
+}
 
 
 
