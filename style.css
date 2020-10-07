@@ -8,14 +8,16 @@
   box-sizing: border-box;
  }
  body{
-  width:85%;
+  
   min-height: 100%;
   margin-left:auto;
   margin-right:auto;
+  margin-top: 3px;
  }
 
 header{
   display: flex;
+  margin: auto;
 }
 .logo{
  width: 100px;
@@ -85,8 +87,6 @@ input{
   border-color:#0065FC ;
 }
 
-
-
 ::placeholder{
  font-weight: bold;
  font-size: 17px;
@@ -101,6 +101,9 @@ h2{
   margin-top: 7px;
   display: flex;
 }
+
+/* SECTION AVEC LES FILTRES*/
+
 .filtres{
   display: flex;
   margin-bottom: 15px;
@@ -157,53 +160,188 @@ h3{
   margin-left: 35px;
   margin-bottom: 35px;
 }
+
+/* SECTION HEBERGEMETNS A MARSEILLE*/
+
 #first-part{
-  display: grid;
-  background-color: indianred;
-  margin-left: 35px;
+  display: flex;
+  margin-left: 35px; 
+  height: 600px;
 }
 .title-first-part{
-  display: grid;
-  grid-area: hd;
-  width: fit-content;
-  background-color: grey;
-}
-.title{
-  margin: 0;
-  padding: 10px 0;
-  background-color: #D8D8D8;
+  display: flex;
+  margin-top: 20px;
+  padding-left: 35px;
+  position: absolute;
+  height: fit-content;
+  background-color: #F3F1F1;
 }
 #first-part article{
-  display: grid;
-  width: 250px;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
   height: 150px;
 }
 div.hebergements-marseille{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 40px;
+  column-gap: 50px;
   width: fit-content;
-  padding: 40px;
+  margin-right: 50px;
+  padding-left: 70px;
   padding-top: 20px;
+  padding-right: 70px;
+  padding-bottom: 0px;
   border-radius: 25px;
-  background-color: #D8D8D8;
-  grid-template-areas: 
-  "hd hd hd"
-  "img img img"
+  background-color: #F3F1F1;
+}
+.overlay{
+  background-color: white;
+  position: relative;
+  border-radius: 0 0 20px 20px;
+  width: 240px;
+  z-index: 4;
+  margin-right: 0px;
+  margin-top: 190px;
+  box-shadow: 0 4px 4px 0 #656565;;
+}
+h3.caption{
+  font-size: 17px;
+  margin-left: 15px;
+  padding-top: 5px;
+  color: black;
+  font-weight: bold;
+  text-transform: none;
+}
+p.caption{
+  margin-left: 15px;
+  color: black;
+  margin-top: 3px;
+  padding-bottom: 30px;
 }
 .grid-image{
   display: grid;
-  margin-top: 20px;
+  margin-top: 75px;
+  object-fit: cover;
+  border-radius: 20px;
+  position: absolute;
+  width: 240px;
+  height: 140px;
+  border: 5px solid white;
+  box-shadow: 0 20px 20px 0  #656565;
+}
+/* ASIDE*/
+
+aside{
+  display: grid;
+  grid-template-rows: auto repeat(3, 1fr);
+  position: relative;
+  width: 100%;
+  padding-top: 0px;
+  border-radius: 25px;
+  background-color:#F3F1F1;
+}
+.header2{
+  height: fit-content;
+  position: absolute;
+}
+h2.title-populaire{
+  margin-left: 20px;
+  padding: 20px 0;
+}
+.populaire{
+  display: grid;
+  position: relative;
+  width: 120px;
+  margin-top: 70px;
+  padding-left: 35px;
+  align-content: left;
+  row-gap: 25px;
+}
+.grid-image2{
+  display: grid;
+  margin-top: 26px;
+  position: absolute;
   object-fit: cover;
   border-radius: 15px;
   width: 220px;
   height: 130px;
-  border: 7px solid white;
+  border: 5px solid white;
+  box-shadow: 0 2px 2px 0  #656565;
+}
+/* ASIDE OVERLAY */
+
+.overlay2{
+  display: flex;
+  background-color: white;
+  position: absolute;
+  border-radius:0 20px 20px 0;
+  width: 260px;
+  height: 130px;
+  z-index: 4;
+  margin-left: 150px;
+  margin-top: 26px;
+  box-shadow: 2px 2px 2px 0  #656565;
+}
+h3.caption2{
+  display:flex;
+  margin-left: 15px;
+  margin-top: 8px;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+p.caption2{
+  display: block;
+  height: fit-content;
+  position: relative;
+}
+
+/* ACTIVITES A MARSEILLE */
+
+#second-part{
+  display: flex;
+  margin-top: 130px;
+  background-color: brown;
+}
+div.title-second-part{
+  height: fit-content;
+  overflow: auto;
+}
+
+.grid-image3{
+  display: grid;
+  margin-top: 26px;
+  position: relative;
+  object-fit: cover;
+  border-radius: 15px;
+  width: 220px;
+  height: 130px;
+  /*box-shadow: 0 2px 2px 0  #656565;*/
+}
+.div-left{
+  display: grid;
+  grid-template-rows: auto repeat(3, 1fr);
+  
+}
+.div-right{
+  display: flex;
 }
 
 
 
 
+
+
+
+
+
+/* For tablets: */
+@media only screen and (max-width: 600px) {
+  div.hebergements-marseille{
+    grid-template-columns: 2fr 1fr;
+  }
+}
 
 
 
