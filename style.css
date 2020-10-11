@@ -288,6 +288,7 @@ p.caption{
 .afficher-plus{
   margin-top: 50px;
   font-weight: bold;
+  color: black;
   
 }
 /* ASIDE*/
@@ -368,7 +369,6 @@ p.caption2{
   margin-left: 35px;
   margin-right: 35px;
   margin-bottom: 30px;
-  background-color: green;
 }
 h2.title3{
   width: fit-content;
@@ -407,103 +407,131 @@ article.gallery-activites{
 }
 .image-large1{
   display: grid;
+  position: relative;
+  margin-right: 60px;
   width: 360px;
   height: 470px;
   object-fit: cover;
   border-radius: 15px;
-  z-index: 1;
+  box-shadow: 0 2px 0 2px #D2D3D5;
 }
 .image-large2{
   display: grid;
   width: 360px;
+  margin-right: 60px;
   height: 470px;
   object-fit: cover;
   border-radius: 15px;
+  box-shadow: 0 2px 0 2px #D2D3D5;
 }
 .grid-image-large1{
   display: grid;
   margin-top: 0px;
   object-fit: cover;
-  margin-left: 60px;
   border-radius: 15px;
   width: 350px;
   height: 240px;
-  border: 5px solid white;
-  box-shadow: 0 2px 2px 0  #656565;
+  box-shadow: 0 2px 0 2px #D2D3D5;
 }
 .grid-image-small1{
   display: grid;
   margin-top: 0px;
   object-fit: cover;
-  margin-left: 60px;
   border-radius: 15px;
   width: 350px;
-  height: 130px;
-  border: 5px solid white;
-  box-shadow: 0 2px 2px 0  #656565;
+  height: 140px;
+  box-shadow: 0 2px 0 2px #D2D3D5;
 }
 .grid-image-small2{
   display: grid;
   margin-top: 0px;
   object-fit: cover;
-  margin-left: 60px;
   border-radius: 15px;
   width: 350px;
   height: 150px;
-  border: 5px solid white;
-  box-shadow: 0 2px 2px 0  #656565;
+  box-shadow: 0 2px 0 2px #D2D3D5;
 }
 .grid-image-large2{
   display: grid;
   margin-top: 0px;
   object-fit: cover;
-  margin-left: 60px;
   border-radius: 15px;
   width: 350px;
   height: 220px;
-  border: 5px solid white;
-  box-shadow: 0 2px 2px 0  #656565;
+  box-shadow: 0 2px 0 2px #D2D3D5;
 }
 div.overlay3-img1{
   display: flex;
+  position: absolute;
   background-color: white;
-  width: 350px;
-  height: 50px;
-  margin-right: 0px;
+  margin-top: 415px;
+  width: 360px;
+  height: 60px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 2px 0  #656565;
 }
 .overlay3-img2{
   display: flex;
+  position: absolute;
   background-color: white;
-  width: 350px;
+  margin-top: 185px;
   margin-right: 0;
+  width: 352px;
+  height: 60px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 2px 0  #656565;
 }
 .overlay3-img3{
   display: flex;
+  position: absolute;
   background-color: white;
+  margin-top: 129px;
   width: 350px;
+  height: 60px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 2px 0  #656565;
 }
 .overlay3-img4{
   display: flex;
+  position: absolute;
   background-color: white;
-  width: 350px;
+  margin-top: 420px;
+  width: 360px;
+  height: 60px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 2px 0  #656565;
 }
 .overlay3-img5{
   display: flex;
+  position: absolute;
   background-color: white;
+  margin-top: 130px;
   width: 350px;
+  height: 60px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 2px 0  #656565;
 }
 .overlay3-img6{
   display: flex;
+  position: absolute;
   background-color: white;
+  margin-top: 180px;
   width: 350px;
+  height: 60px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 2px 0  #656565;
   
 }
 div.right-div{
   display: flex;
   margin-top: 70px;
 }
-div.image-up-down{
+div.image-up-down1{
   display: grid;
+}
+div.image-up-down2{
+  display: grid;
+  row-gap: 68px;
 }
 .gallery-activites{
   transition: all .2s ease-in-out;
