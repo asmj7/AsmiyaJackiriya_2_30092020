@@ -7,20 +7,19 @@
   box-sizing: border-box;
  }
  body{
-  min-height: 100%;
-  margin-right:auto;
+   margin: 0 auto;
   margin-top: 3px;
  }
 
 header{
   display: flex;
-  margin: auto;
+  margin-left: 94px;
+  margin-right: 97px;
 }
 .logo{
  width: 100px;
  height: 50px;
  margin-right: auto;
- margin-left: 35px;
  margin-top: 13px;
 }
 
@@ -50,22 +49,22 @@ a.activités{
 
 h1{
  margin-top: 30px;
- margin-left: 35px;
+ margin-left: 97px;
  margin-bottom: 10px;
 } 
 p.description{
  width: 85%;
- margin-left: 37px;
+ margin-left: 97px;
  margin-top: 12px;
  margin-bottom: 20px;
 }
 .search{
   width: 85%;
   margin-bottom: 35px;
+  margin-left: 97px;
 }
 .place-icon{
   padding: 17px 20px;
-  margin-left: 35px;
   background-color: #F2F2F2;
   border-radius: 15px 0 0 15px;
 }
@@ -95,7 +94,7 @@ input{
 }
 
 h2{
-  margin-left: 35px;
+  margin-left: 97px;
   margin-right: 25px;
   margin-top: 7px;
   display: flex;
@@ -195,7 +194,7 @@ h3.filtre-name{
 }
 .info{
   margin-top: 25px;
-  margin-left: 35px;
+  margin-left: 97px;
   margin-bottom: 35px;
 }
 
@@ -204,8 +203,8 @@ h3.filtre-name{
 #first-part{
   display: flex;
   height: 630px;
-  margin-left: 35px;
-  margin-right: 35px;
+  width: fit-content;
+  margin-left: 94px;
 }
 .title-first-part{
   display: flex;
@@ -223,6 +222,7 @@ h3.filtre-name{
 }
 .gallery-hebergements{
   transition: all .2s ease-in-out;
+  width: 25%;
 }
 .gallery-hebergements:hover{
   transform: scale(1.1);
@@ -232,7 +232,6 @@ div.hebergements-marseille{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 50px;
-  width: fit-content;
   margin-right: 50px;
   padding-left: 70px;
   padding-top: 20px;
@@ -292,9 +291,7 @@ p.caption{
 
 aside{
   display: grid;
-  grid-template-rows: auto repeat(3, 1fr);
   position: relative;
-  width: 100%;
   padding-top: 0px;
   border-radius: 25px;
   background-color:#F3F1F1;
@@ -310,11 +307,10 @@ h2.title-populaire{
 .populaire{
   display: grid;
   position: relative;
-  width: 120px;
+  width:600px;
   margin-top: 70px;
   padding-left: 55px;
   align-content: left;
-  row-gap: 25px;
 }
 .grid-image2{
   display: grid;
@@ -336,7 +332,6 @@ h2.title-populaire{
   border-radius:0 20px 20px 0;
   width: 260px;
   height: 150px;
-  z-index: 4;
   margin-left: 150px;
   margin-top: 26px;
   box-shadow: 2px 2px 2px 0  #656565;
@@ -369,40 +364,240 @@ p.caption2{
   margin-top: 130px;
   margin-left: 35px;
   margin-right: 35px;
-  background-color: brown;
+  margin-bottom: 30px;
+  background-color: green;
+}
+h2.title3{
+  width: fit-content;
+  position: absolute;
+  height: fit-content;
+  margin-left: 70px;
 }
 div.title-second-part{
+  display: flex;
+  width: fit-content;
   height: fit-content;
-  overflow: auto;
+  margin-top: 20px;
+  margin-bottom: px;
 }
-
-.grid-image3{
+div.activites-marseille{
   display: grid;
-  margin-top: 26px;
-  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 70px;
+  column-gap: 50px;
+  height: 550px;
+  margin-top: 20px;
+}
+.image-up-down{
+  display: block;
+  width: fit-content;
+}
+div.left-div{
+  display: flex;
+  margin-top: 70px;
+  margin-right: 10px;
+}
+article.gallery-activites{
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+.image-large1{
+  display: grid;
+  width: 360px;
+  height: 470px;
   object-fit: cover;
   border-radius: 15px;
-  width: 220px;
-  height: 130px;
-  /*box-shadow: 0 2px 2px 0  #656565;*/
+  z-index: 1;
 }
-.div-left{
+.image-large2{
   display: grid;
-  grid-template-rows: auto repeat(3, 1fr);
+  width: 360px;
+  height: 470px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.grid-image-large1{
+  display: grid;
+  margin-top: 0px;
+  object-fit: cover;
+  margin-left: 60px;
+  border-radius: 15px;
+  width: 350px;
+  height: 240px;
+  border: 5px solid white;
+  box-shadow: 0 2px 2px 0  #656565;
+}
+.grid-image-small1{
+  display: grid;
+  margin-top: 0px;
+  object-fit: cover;
+  margin-left: 60px;
+  border-radius: 15px;
+  width: 350px;
+  height: 130px;
+  border: 5px solid white;
+  box-shadow: 0 2px 2px 0  #656565;
+}
+.grid-image-small2{
+  display: grid;
+  margin-top: 0px;
+  object-fit: cover;
+  margin-left: 60px;
+  border-radius: 15px;
+  width: 350px;
+  height: 150px;
+  border: 5px solid white;
+  box-shadow: 0 2px 2px 0  #656565;
+}
+.grid-image-large2{
+  display: grid;
+  margin-top: 0px;
+  object-fit: cover;
+  margin-left: 60px;
+  border-radius: 15px;
+  width: 350px;
+  height: 220px;
+  border: 5px solid white;
+  box-shadow: 0 2px 2px 0  #656565;
+}
+div.overlay3-img1{
+  display: flex;
+  background-color: white;
+  width: 350px;
+  height: 50px;
+  margin-right: 0px;
+}
+.overlay3-img2{
+  display: flex;
+  background-color: white;
+  width: 350px;
+  margin-right: 0;
+}
+.overlay3-img3{
+  display: flex;
+  background-color: white;
+  width: 350px;
+}
+.overlay3-img4{
+  display: flex;
+  background-color: white;
+  width: 350px;
+}
+.overlay3-img5{
+  display: flex;
+  background-color: white;
+  width: 350px;
+}
+.overlay3-img6{
+  display: flex;
+  background-color: white;
+  width: 350px;
   
 }
-.div-right{
+div.right-div{
   display: flex;
+  margin-top: 70px;
+}
+div.image-up-down{
+  display: grid;
+}
+.gallery-activites{
+  transition: all .2s ease-in-out;
+}
+.gallery-activites:hover{
+  transform: scale(1.1);
+}
+.footer{
+  display: flex;
+  margin-top: 70px;
+  background-color:#F2F2F2;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: space-around;
+}
+.colonne1, .colonne2, .colonne3{
+  display: block;
+  height: fit-content;
+}
+.footer-links{
+  color: black;
 }
 
-/* For tablets: 
-@media only screen and (max-width: 600px) {
-  div.hebergements-marseille{
-    grid-template-columns: 2fr 1fr;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 870px) {
+  header {
+     float: none;
+
+     text-align: left;
   }
 }
-*/
 
+
+
+
+
+/*For tablets: */
+@media  screen and (max-width: 600px) {
+  div.hebergements-marseille{
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+  #first-part{
+    flex-direction: column;
+  }
+  .gallery-populaire{
+    width: fit-content;
+  }
+}
 
 
 
@@ -468,25 +663,3 @@ div.title-second-part{
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
