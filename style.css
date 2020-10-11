@@ -94,7 +94,7 @@ input{
 }
 
 h2{
-  margin-left: 97px;
+  margin-left: 90px;
   margin-right: 25px;
   margin-top: 7px;
   display: flex;
@@ -205,6 +205,9 @@ h3.filtre-name{
   height: 630px;
   width: fit-content;
   margin-left: 94px;
+}
+h2.title{
+  margin-left: 35px;
 }
 .title-first-part{
   display: flex;
