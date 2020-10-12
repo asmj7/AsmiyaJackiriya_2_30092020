@@ -1,5 +1,5 @@
-/* HEADER*/
-*{
+ /* HEADER*/
+ *{
   font-family:'Raleway', sans-serif;
   padding: 0;
   text-decoration: none;
@@ -7,7 +7,7 @@
   box-sizing: border-box;
  }
  body{
-   margin: 0 auto;
+  margin-right:auto;
   margin-top: 3px;
  }
 
@@ -63,8 +63,9 @@ p.description{
   margin-bottom: 35px;
   margin-left: 97px;
 }
-.place-icon{
+span.place-icon{
   padding: 17px 20px;
+  border: 1px solid #F2F2F2;
   background-color: #F2F2F2;
   border-radius: 15px 0 0 15px;
 }
@@ -73,7 +74,7 @@ input{
  width: 250px;
  height: 53px;
  padding: 0 25px;
- border: 3px solid #F2F2F2;
+ border: 1px solid #F2F2F2;
 }
 .search-button{
   background-color: #0065FC;
@@ -93,7 +94,7 @@ input{
  text-align: left;
 }
 
-h2{
+h2.filtres{
   margin-left: 97px;
   margin-right: 25px;
   margin-top: 7px;
@@ -192,23 +193,39 @@ h3.filtre-name{
   font-size: 15px;
   font-weight: bold;
 }
+.information{
+  display: flex;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+i.fas.fa-info{
+  color: #0065FC;
+  padding: 17px;
+  margin-left: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #F2F2F2;
+
+}
 .info{
-  margin-top: 25px;
-  margin-left: 97px;
-  margin-bottom: 35px;
+  font-weight: 400;
+  color: black;
+  padding-bottom: 5px;
 }
 
-/* SECTION HEBERGEMETNS A MARSEILLE*/
+/************ SECTION HEBERGEMETNS A MARSEILLE***********/
 
 #first-part{
   display: flex;
   height: 630px;
-  width: fit-content;
   margin-left: 94px;
+  margin-right: 35px;
+  margin-top: 30px;
 }
 .title-first-part{
   display: flex;
   margin-top: 20px;
+  margin-left: 36px;
   padding-left: 35px;
   position: absolute;
   height: fit-content;
@@ -222,7 +239,6 @@ h3.filtre-name{
 }
 .gallery-hebergements{
   transition: all .2s ease-in-out;
-  width: 25%;
 }
 .gallery-hebergements:hover{
   transform: scale(1.1);
@@ -232,7 +248,8 @@ div.hebergements-marseille{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 50px;
-  margin-right: 50px;
+  width: fit-content;
+  margin-right: 40px;
   padding-left: 70px;
   padding-top: 20px;
   padding-right: 70px;
@@ -253,7 +270,7 @@ div.hebergements-marseille{
 }
 h3.caption{
   font-size: 17px;
-  margin-left: 15px;
+  padding-left: 15px;
   margin-bottom: 4px;
   padding-top: 5px;
   color: black;
@@ -261,14 +278,18 @@ h3.caption{
   text-transform: none;
 }
 p.caption{
-  margin-left: 15px;
+  padding-left: 15px;
   margin-bottom: 7px;
   color: black;
   margin-top: 3px;
 }
 .stars{
   color: #0065FC;
-  margin-left: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+#grey{
+  color: #C6C7C8;
 }
 
 .grid-image{
@@ -283,11 +304,11 @@ p.caption{
   box-shadow: 0 20px 20px 0  #656565;
 }
 .afficher-plus{
-  margin-top: 50px;
+  margin-top: 70px;
   font-weight: bold;
   
 }
-/* ASIDE*/
+/***************ASIDE*****************/
 
 aside{
   display: grid;
@@ -307,7 +328,7 @@ h2.title-populaire{
 .populaire{
   display: grid;
   position: relative;
-  width:600px;
+  width: 600px;
   margin-top: 70px;
   padding-left: 55px;
   align-content: left;
@@ -323,22 +344,26 @@ h2.title-populaire{
   border: 5px solid white;
   box-shadow: 0 2px 2px 0  #656565;
 }
-/* ASIDE OVERLAY */
+/************ ASIDE OVERLAY *************/
 
 .overlay2{
-  display: flex;
+  display: block;
+  justify-content: left;
   background-color: white;
-  position: absolute;
+  position:absolute;
   border-radius:0 20px 20px 0;
   width: 260px;
   height: 150px;
+  z-index: 4;
   margin-left: 150px;
   margin-top: 26px;
   box-shadow: 2px 2px 2px 0  #656565;
 }
 h3.caption2{
   display: flex;
-  margin-left: 15px;
+  color: black;
+  padding-left: 15px;
+  padding-bottom: 10px;
   margin-top: 8px;
   margin-bottom: 0;
   width: fit-content;
@@ -346,9 +371,20 @@ h3.caption2{
 }
 p.caption2{
   margin: 0;
-  display: flex;
+  color: flex;
+  display: block;
+  padding-bottom: 10px;
+  padding-left: 15px;
   align-items: left;
   height: fit-content;
+}
+.stars2{
+  display: flex;
+  bottom: 0;
+  position: absolute;
+  padding-bottom: 15px;
+  color: #0065FC;
+  padding-left: 15px;
 }
 .gallery-populaire{
   transition: all .2s ease-in-out;
@@ -361,11 +397,10 @@ p.caption2{
 
 #second-part{
   display: flex;
-  margin-top: 130px;
+  margin-top: 70px;
   margin-left: 35px;
   margin-right: 35px;
   margin-bottom: 30px;
-  background-color: green;
 }
 h2.title3{
   width: fit-content;
@@ -404,103 +439,131 @@ article.gallery-activites{
 }
 .image-large1{
   display: grid;
+  position: relative;
+  margin-right: 60px;
   width: 360px;
   height: 470px;
   object-fit: cover;
   border-radius: 15px;
-  z-index: 1;
+  box-shadow: 0 2px 0 2px #D2D3D5;
 }
 .image-large2{
   display: grid;
   width: 360px;
+  margin-right: 60px;
   height: 470px;
   object-fit: cover;
   border-radius: 15px;
+  box-shadow: 0 2px 0 2px #D2D3D5;
 }
 .grid-image-large1{
   display: grid;
   margin-top: 0px;
   object-fit: cover;
-  margin-left: 60px;
   border-radius: 15px;
   width: 350px;
   height: 240px;
-  border: 5px solid white;
-  box-shadow: 0 2px 2px 0  #656565;
+  box-shadow: 0 2px 0 2px #D2D3D5;
 }
 .grid-image-small1{
   display: grid;
   margin-top: 0px;
   object-fit: cover;
-  margin-left: 60px;
   border-radius: 15px;
   width: 350px;
-  height: 130px;
-  border: 5px solid white;
-  box-shadow: 0 2px 2px 0  #656565;
+  height: 140px;
+  box-shadow: 0 2px 0 2px #D2D3D5;
 }
 .grid-image-small2{
   display: grid;
   margin-top: 0px;
   object-fit: cover;
-  margin-left: 60px;
   border-radius: 15px;
   width: 350px;
   height: 150px;
-  border: 5px solid white;
-  box-shadow: 0 2px 2px 0  #656565;
+  box-shadow: 0 2px 0 2px #D2D3D5;
 }
 .grid-image-large2{
   display: grid;
   margin-top: 0px;
   object-fit: cover;
-  margin-left: 60px;
   border-radius: 15px;
   width: 350px;
   height: 220px;
-  border: 5px solid white;
-  box-shadow: 0 2px 2px 0  #656565;
+  box-shadow: 0 2px 0 2px #D2D3D5;
 }
 div.overlay3-img1{
   display: flex;
+  position: absolute;
   background-color: white;
-  width: 350px;
-  height: 50px;
-  margin-right: 0px;
+  margin-top: 415px;
+  width: 360px;
+  height: 60px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 2px 0  #656565;
 }
 .overlay3-img2{
   display: flex;
+  position: absolute;
   background-color: white;
-  width: 350px;
+  margin-top: 185px;
   margin-right: 0;
+  width: 352px;
+  height: 60px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 2px 0  #656565;
 }
 .overlay3-img3{
   display: flex;
+  position: absolute;
   background-color: white;
+  margin-top: 129px;
   width: 350px;
+  height: 60px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 2px 0  #656565;
 }
 .overlay3-img4{
   display: flex;
+  position: absolute;
   background-color: white;
-  width: 350px;
+  margin-top: 420px;
+  width: 360px;
+  height: 60px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 2px 0  #656565;
 }
 .overlay3-img5{
   display: flex;
+  position: absolute;
   background-color: white;
+  margin-top: 130px;
   width: 350px;
+  height: 60px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 2px 0  #656565;
 }
 .overlay3-img6{
   display: flex;
+  position: absolute;
   background-color: white;
+  margin-top: 180px;
   width: 350px;
+  height: 60px;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 2px 0  #656565;
   
 }
 div.right-div{
   display: flex;
   margin-top: 70px;
 }
-div.image-up-down{
+div.image-up-down1{
   display: grid;
+}
+div.image-up-down2{
+  display: grid;
+  row-gap: 68px;
 }
 .gallery-activites{
   transition: all .2s ease-in-out;
@@ -508,6 +571,22 @@ div.image-up-down{
 .gallery-activites:hover{
   transform: scale(1.1);
 }
+.footer{
+  display: flex;
+  margin-top: 70px;
+  background-color:#F2F2F2;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: space-around;
+}
+.colonne1, .colonne2, .colonne3{
+  display: block;
+  height: fit-content;
+}
+.footer-links{
+  color: black;
+}
+
 .footer{
   display: flex;
   margin-top: 70px;
