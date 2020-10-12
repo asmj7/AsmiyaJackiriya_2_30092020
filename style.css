@@ -1,5 +1,5 @@
- /* HEADER*/
- *{
+/* HEADER*/
+*{
   font-family:'Raleway', sans-serif;
   padding: 0;
   text-decoration: none;
@@ -7,14 +7,13 @@
   box-sizing: border-box;
  }
  body{
-  margin-right:auto;
   margin-top: 3px;
  }
 
 header{
   display: flex;
-  margin-left: 94px;
-  margin-right: 97px;
+  width: 90%;
+  margin: auto;
 }
 .logo{
  width: 100px;
@@ -49,19 +48,20 @@ a.activités{
 
 h1{
  margin-top: 30px;
- margin-left: 97px;
+ width: 90%;
+ margin: auto;
  margin-bottom: 10px;
 } 
 p.description{
  width: 85%;
- margin-left: 97px;
+ width: 90%;
+ margin: auto;
  margin-top: 12px;
  margin-bottom: 20px;
 }
 .search{
-  width: 85%;
-  margin-bottom: 35px;
-  margin-left: 97px;
+  width: 90%;
+  margin:auto;
 }
 span.place-icon{
   padding: 17px 20px;
@@ -93,9 +93,14 @@ input{
  padding-left: 0px;
  text-align: left;
 }
-
+div.filtres{
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 35px;
+}
 h2.filtres{
-  margin-left: 97px;
   margin-right: 25px;
   margin-top: 7px;
   display: flex;
@@ -195,13 +200,13 @@ h3.filtre-name{
 }
 .information{
   display: flex;
-  margin-top: 20px;
-  margin-left: 35px;
+  margin-top: 40px;
+  width: 90%;
+  margin:auto;
 }
 i.fas.fa-info{
   color: #0065FC;
   padding: 17px;
-  margin-left: 60px;
   border-radius: 50%;
   margin-right: 10px;
   border: 2px solid #F2F2F2;
@@ -218,8 +223,8 @@ i.fas.fa-info{
 #first-part{
   display: flex;
   height: 630px;
-  margin-left: 94px;
-  margin-right: 35px;
+  width: 90%;
+  margin: auto;
   margin-top: 30px;
 }
 .title-first-part{
@@ -398,30 +403,27 @@ p.caption2{
 #second-part{
   display: flex;
   margin-top: 70px;
-  margin-left: 35px;
-  margin-right: 35px;
+  width: 90%;
+  margin: auto;
   margin-bottom: 30px;
 }
 h2.title3{
   width: fit-content;
-  position: absolute;
   height: fit-content;
-  margin-left: 70px;
 }
 div.title-second-part{
   display: flex;
+  position: absolute;
   width: fit-content;
   height: fit-content;
-  margin-top: 20px;
-  margin-bottom: px;
+  margin-top: 70px;
 }
 div.activites-marseille{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-left: 70px;
   column-gap: 50px;
   height: 550px;
-  margin-top: 20px;
+  margin-top: 70px;
 }
 .image-up-down{
   display: block;
