@@ -403,30 +403,27 @@ p.caption2{
 #second-part{
   display: flex;
   margin-top: 70px;
-  margin-left: 35px;
-  margin-right: 35px;
+  width: 90%;
+  margin: auto;
   margin-bottom: 30px;
 }
 h2.title3{
   width: fit-content;
-  position: absolute;
   height: fit-content;
-  margin-left: 70px;
 }
 div.title-second-part{
   display: flex;
+  position: absolute;
   width: fit-content;
   height: fit-content;
-  margin-top: 20px;
-  margin-bottom: px;
+  margin-top: 70px;
 }
 div.activites-marseille{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-left: 70px;
   column-gap: 50px;
   height: 550px;
-  margin-top: 20px;
+  margin-top: 70px;
 }
 .image-up-down{
   display: block;
