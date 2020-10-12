@@ -1,5 +1,5 @@
-/* HEADER*/
-*{
+ /* HEADER*/
+ *{
   font-family:'Raleway', sans-serif;
   padding: 0;
   text-decoration: none;
@@ -7,7 +7,7 @@
   box-sizing: border-box;
  }
  body{
-   margin: 0 auto;
+  margin-right:auto;
   margin-top: 3px;
  }
 
@@ -63,8 +63,9 @@ p.description{
   margin-bottom: 35px;
   margin-left: 97px;
 }
-.place-icon{
+span.place-icon{
   padding: 17px 20px;
+  border: 1px solid #F2F2F2;
   background-color: #F2F2F2;
   border-radius: 15px 0 0 15px;
 }
@@ -73,7 +74,7 @@ input{
  width: 250px;
  height: 53px;
  padding: 0 25px;
- border: 3px solid #F2F2F2;
+ border: 1px solid #F2F2F2;
 }
 .search-button{
   background-color: #0065FC;
@@ -93,8 +94,8 @@ input{
  text-align: left;
 }
 
-h2{
-  margin-left: 90px;
+h2.filtres{
+  margin-left: 97px;
   margin-right: 25px;
   margin-top: 7px;
   display: flex;
@@ -192,26 +193,39 @@ h3.filtre-name{
   font-size: 15px;
   font-weight: bold;
 }
+.information{
+  display: flex;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+i.fas.fa-info{
+  color: #0065FC;
+  padding: 17px;
+  margin-left: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #F2F2F2;
+
+}
 .info{
-  margin-top: 25px;
-  margin-left: 97px;
-  margin-bottom: 35px;
+  font-weight: 400;
+  color: black;
+  padding-bottom: 5px;
 }
 
-/* SECTION HEBERGEMETNS A MARSEILLE*/
+/************ SECTION HEBERGEMETNS A MARSEILLE***********/
 
 #first-part{
   display: flex;
   height: 630px;
-  width: fit-content;
   margin-left: 94px;
-}
-h2.title{
-  margin-left: 35px;
+  margin-right: 35px;
+  margin-top: 30px;
 }
 .title-first-part{
   display: flex;
   margin-top: 20px;
+  margin-left: 36px;
   padding-left: 35px;
   position: absolute;
   height: fit-content;
@@ -225,7 +239,6 @@ h2.title{
 }
 .gallery-hebergements{
   transition: all .2s ease-in-out;
-  width: 25%;
 }
 .gallery-hebergements:hover{
   transform: scale(1.1);
@@ -235,7 +248,8 @@ div.hebergements-marseille{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 50px;
-  margin-right: 50px;
+  width: fit-content;
+  margin-right: 40px;
   padding-left: 70px;
   padding-top: 20px;
   padding-right: 70px;
@@ -256,7 +270,7 @@ div.hebergements-marseille{
 }
 h3.caption{
   font-size: 17px;
-  margin-left: 15px;
+  padding-left: 15px;
   margin-bottom: 4px;
   padding-top: 5px;
   color: black;
@@ -264,14 +278,18 @@ h3.caption{
   text-transform: none;
 }
 p.caption{
-  margin-left: 15px;
+  padding-left: 15px;
   margin-bottom: 7px;
   color: black;
   margin-top: 3px;
 }
 .stars{
   color: #0065FC;
-  margin-left: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+#grey{
+  color: #C6C7C8;
 }
 
 .grid-image{
@@ -286,12 +304,11 @@ p.caption{
   box-shadow: 0 20px 20px 0  #656565;
 }
 .afficher-plus{
-  margin-top: 50px;
+  margin-top: 70px;
   font-weight: bold;
-  color: black;
   
 }
-/* ASIDE*/
+/***************ASIDE*****************/
 
 aside{
   display: grid;
@@ -311,7 +328,7 @@ h2.title-populaire{
 .populaire{
   display: grid;
   position: relative;
-  width:600px;
+  width: 600px;
   margin-top: 70px;
   padding-left: 55px;
   align-content: left;
@@ -327,22 +344,26 @@ h2.title-populaire{
   border: 5px solid white;
   box-shadow: 0 2px 2px 0  #656565;
 }
-/* ASIDE OVERLAY */
+/************ ASIDE OVERLAY *************/
 
 .overlay2{
-  display: flex;
+  display: block;
+  justify-content: left;
   background-color: white;
-  position: absolute;
+  position:absolute;
   border-radius:0 20px 20px 0;
   width: 260px;
   height: 150px;
+  z-index: 4;
   margin-left: 150px;
   margin-top: 26px;
   box-shadow: 2px 2px 2px 0  #656565;
 }
 h3.caption2{
   display: flex;
-  margin-left: 15px;
+  color: black;
+  padding-left: 15px;
+  padding-bottom: 10px;
   margin-top: 8px;
   margin-bottom: 0;
   width: fit-content;
@@ -350,9 +371,20 @@ h3.caption2{
 }
 p.caption2{
   margin: 0;
-  display: flex;
+  color: flex;
+  display: block;
+  padding-bottom: 10px;
+  padding-left: 15px;
   align-items: left;
   height: fit-content;
+}
+.stars2{
+  display: flex;
+  bottom: 0;
+  position: absolute;
+  padding-bottom: 15px;
+  color: #0065FC;
+  padding-left: 15px;
 }
 .gallery-populaire{
   transition: all .2s ease-in-out;
