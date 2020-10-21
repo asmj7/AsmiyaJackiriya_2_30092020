@@ -16,10 +16,11 @@ header.header{
   margin-top: 0px;
 }
 .logo{
- width: 100px;
+ width: 120px;
  height: 50px;
  margin-right: auto;
  margin-top: 13px;
+ object-fit: cover;
 }
 
 a.log-in{
@@ -92,7 +93,10 @@ input{
   border-radius: 0 15px 15px 0;
   border-color:#0065FC;
 }
-
+a{
+  text-decoration: none;
+  color: white;
+}
 ::placeholder{
  font-weight: bold;
  font-size: 17px;
@@ -119,7 +123,7 @@ h2.filtres{
   display: flex;
   margin-bottom: 15px;
 }
-i.fas.fa-money-bill-wave-alt:before{
+i.fas.fa-money-bill-wave:before{
   position: absolute;
   color: #0065FC;
   padding: 17px;
@@ -212,6 +216,7 @@ h3.filtre-name{
 .filtre-name:hover{
   color: #0065FC;
 }
+
 .information{
   display: flex;
   margin-top: 40px;
@@ -257,6 +262,9 @@ i.fas.fa-info{
 .gallery-hebergements{
   transition: all .2s ease-in-out;
 }
+.gallery-hebergements:nth-child(-n+3){
+  margin-top: 75px;
+}
 .gallery-hebergements:hover{
   transform: scale(1.1);
 }
@@ -265,7 +273,7 @@ div.hebergements-marseille{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 50px;
-  width: fit-content;
+  width: 60%;
   margin-right: 40px;
   padding-left: 70px;
   padding-top: 20px;
@@ -283,7 +291,7 @@ div.hebergements-marseille{
   bottom: 0;
   width: 240px;
   margin-right: 0px;
-  margin-top: 190px;
+  margin-top: 120px;
   box-shadow: 0 4px 4px 0 #656565;;
 }
 h3.caption{
@@ -310,21 +318,18 @@ p.caption{
 #grey{
   color: #C6C7C8;
 }
-
 .grid-image{
   display: grid;
-  margin-top: 75px;
   object-fit: cover;
   position: absolute;
   border-radius: 20px;
   width: 240px;
-  z-index: 0;
   height: 140px;
   border: 5px solid white;
   box-shadow: 0 20px 20px 0  #656565;
 }
 .afficher-plus{
-  margin-top: 70px;
+  margin-top: 10px;
   font-weight: bold;
   color: black;
 }
@@ -336,6 +341,7 @@ p.caption{
 aside{
   display: grid;
   position: relative;
+  width: 37%;
   padding-top: 0px;
   border-radius: 25px;
   background-color:#F3F1F1;
@@ -472,7 +478,7 @@ article.gallery-activites{
 .image-large1{
   display: grid;
   margin-right: 60px;
-  width: 360px;
+  width: 85%;
   height: 470px;
   object-fit: cover;
   border-radius: 15px;
@@ -480,7 +486,7 @@ article.gallery-activites{
 }
 .image-large2{
   display: grid;
-  width: 360px;
+  width: 85%;
   margin-right: 60px;
   height: 470px;
   object-fit: cover;
@@ -492,7 +498,7 @@ article.gallery-activites{
   margin-top: 0px;
   object-fit: cover;
   border-radius: 15px;
-  width: 350px;
+  width: 100%;
   height: 240px;
   box-shadow: 0 2px 0 2px #D2D3D5;
 }
@@ -500,8 +506,9 @@ article.gallery-activites{
   display: grid;
   margin-top: 0px;
   object-fit: cover;
+  position: relative;
   border-radius: 15px;
-  width: 350px;
+  width: 100%;
   height: 140px;
   box-shadow: 0 2px 0 2px #D2D3D5;
 }
@@ -510,7 +517,7 @@ article.gallery-activites{
   margin-top: 0px;
   object-fit: cover;
   border-radius: 15px;
-  width: 350px;
+  width: 100%;
   height: 150px;
   box-shadow: 0 2px 0 2px #D2D3D5;
 }
@@ -519,29 +526,27 @@ article.gallery-activites{
   margin-top: 0px;
   object-fit: cover;
   border-radius: 15px;
-  width: 350px;
+  width: 100%;
   height: 220px;
   box-shadow: 0 2px 0 2px #D2D3D5;
 }
 div.overlay3-img1{
   display: flex;
   position: absolute;
-  left: 0;
-  margin-left: 89px;
   background-color: white;
-  margin-top: 415px;
-  width: 360px;
+  width: 19.8%;
   height: 60px;
+  margin-top: 412px;
   border-radius: 0 0 20px 20px;
-  box-shadow: 0 2px 2px 0  #5f5454;
+  box-shadow: 0 2px 2px 0  #656565;
 }
-.overlay3-img2{
+div.overlay3-img2{
   display: flex;
   position: absolute;
   background-color: white;
   margin-top: 185px;
   margin-right: 0;
-  width: 352px;
+  width: 19.9%;
   height: 60px;
   border-radius: 0 0 20px 20px;
   box-shadow: 0 2px 2px 0  #656565;
@@ -550,8 +555,8 @@ div.overlay3-img1{
   display: flex;
   position: absolute;
   background-color: white;
-  margin-top: 129px;
-  width: 350px;
+  margin-top: 120px;
+  width: 19.9%;
   height: 60px;
   border-radius: 0 0 20px 20px;
   box-shadow: 0 2px 2px 0  #656565;
@@ -561,29 +566,27 @@ div.overlay3-img1{
   position: absolute;
   background-color: white;
   margin-top: 420px;
-  width: 360px;
-  right: 0;
-  margin-right: 519px;
   height: 60px;
+  width: 19.8%;
   border-radius: 0 0 20px 20px;
   box-shadow: 0 2px 2px 0  #656565;
 }
 .overlay3-img5{
-  display: flex;
+  display: block;
   position: absolute;
   background-color: white;
   margin-top: 130px;
-  width: 350px;
+  width: 20.5%;
   height: 60px;
   border-radius: 0 0 20px 20px;
   box-shadow: 0 2px 2px 0  #656565;
 }
 .overlay3-img6{
-  display: flex;
+  display: block;
   position: absolute;
   background-color: white;
   margin-top: 180px;
-  width: 350px;
+  width: 20.5%;
   height: 60px;
   border-radius: 0 0 20px 20px;
   box-shadow: 0 2px 2px 0  #656565;
@@ -651,9 +654,11 @@ div.image-up-down2{
   body{
     width: 800px;
   }
-  header{
-    margin-left: 35px;
-    margin-bottom: 20px;
+  header.header{
+    margin-bottom: 25px;
+  }
+  a.log-in{
+    padding-right: 0;
   }
   div.filtres{
   display: flex;
@@ -669,10 +674,16 @@ div.image-up-down2{
   .gallery-hebergements:hover{
     transform:none ;
   }
+  .gallery-hebergements:nth-child(-n+3){
+    margin-top: 0px;
+  }
+  .gallery-hebergements:nth-child(-n+2){
+    margin-top: 75px;
+  }
   div.hebergements-marseille{
     width: 92%;
     margin-left: 35px;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding-bottom: 35px;
     row-gap: 100px;
     align-items: center;
@@ -695,13 +706,10 @@ div.image-up-down2{
   .gallery-populaire:hover{
     transform: none;
   }
-  div.populaire{
-
-  }
   /**************activites*******************/
   #second-part{
     width: 100%;
-    margin-top: 900px;
+    margin-top: 990px;
     height: fit-content;
   }
   div.activites-marseille{
@@ -781,49 +789,59 @@ div.image-up-down2{
     display: block;
     width: 736px;
     margin-top: 230px;
-    margin-left: 4.3%;
-    box-shadow: 2px 2px 0 0 #5f5454;
+    margin-left: 4.6%;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 2px 2px 0  #656565;
   }
-  .overlay3-img2{
+  div.overlay3-img2{
     display: block;
     width: 736px;
     margin-top: 290px;
-    margin-left: 4.3%;
-    box-shadow: 2px 2px 0 0 #5f5454;
+    margin-left: 4.6%;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 2px 2px 0  #656565;
   }
   .overlay3-img3{
     display: block;
     width: 736px;
     margin-top: 270px;
-    margin-left: 4.3%;
-    box-shadow: 2px 2px 0 0 #5f5454;
+    margin-left: 4.6%;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 2px 2px 0  #656565;
   }
   .overlay3-img4{
     display: block;
     width: 736px;
     left: 0;
     margin-top: 260px;
-    margin-left: 4.3%;
-    box-shadow: 2px 2px 0 0 #5f5454;
+    margin-left: 4.6%;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 2px 2px 0  #656565;
   }
   .overlay3-img5{
     display: block;
     width: 736px;
     margin-top: 260px;
-    margin-left: 4.3%;
-    box-shadow: 2px 2px 0 0 #5f5454;
+    margin-left: 4.6%;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 2px 2px 0  #656565;
   }
   .overlay3-img6{
     display: block;
     width: 736px;
     margin-top: 230px;
-    margin-left: 4.3%;
-    box-shadow: 2px 2px 0 0 #5f5454;
+    margin-left: 4.4%;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 2px 2px 0  #656565;
     
   }
   section.footer{
     display: flex;
     margin-top: 1450px;
+  }
+  i.fas.fa-search::before{
+    visibility: hidden;
+    display: none;
   }
 }
 /**************FOR IPHONE 8***************/
@@ -835,31 +853,63 @@ div.image-up-down2{
   body{
     width: 375px;
   }
-  header{
-    margin-left: 15px;
-    margin-bottom: 20px;
+  header.header{
+    margin-left: 0px;
+    margin-right: 0px;  
+  }
+  header.header{
+    display: block;
+  }
+  a.log-in{
+    display: block;
+    padding: 32px;
+    display: block;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  a.hebergements{
+    display: flex;
+    justify-content: space-around;
+    border-top: none;
+    padding: 20px 27px;
+    border-bottom: 3px solid #0065FC;
+  }
+  a.activités{
+    padding: 20px 45px;
+    padding-right: 53px;
+    border-bottom: 3px solid #F2F2F2;
   }
   h1{
-    font-size: 22px;
+    margin-top: 22px;
+    font-size: 23px;
+    margin-bottom: 15px;
   }
   span.place-icon{
-    padding: 21px 25px;
+    padding: 16px 20px;
   }
   input{
+    margin-top: 20px;
     position: relative;
-    width: 200px;
-    height: 62px;
+    width: 80%;
+    height: 50px;
     padding: 0 28px;
-    border: 2px solid #F2F2F2;
+    border-radius: 0 15px 15px 0;
+    border: 1px solid #F2F2F2;
    }
   a.filtre-list{
     display: flex;
   }
   i.fas.fa-search{
-     padding: 21px 25px;
+     padding: 14px 17px;
      color: white;
+     position: absolute;
+     right: 30px;
+     margin-top: 20px;
      background-color: #0065FC;
-     border-radius: 0 15px 15px 0;
+     border-radius: 15px 15px 15px 15px;
+     border: 3px solid #0065FC;
    }
    .search-button{
      display: none;
@@ -876,7 +926,7 @@ div.image-up-down2{
   flex-flow: row wrap;
   margin-right: 0px;
   margin-left: 15px;
-  width: 375px;
+  width: 90%;
   }
   /***************HEBERGEMENTS*************/
   #first-part{
@@ -886,6 +936,9 @@ div.image-up-down2{
   }
   .gallery-hebergements:hover{
     transform:none ;
+  }
+  .gallery-hebergements:nth-child(-n+3){
+    margin-top: 0px;
   }
   div.hebergements-marseille{
     display: grid;
@@ -905,7 +958,7 @@ div.image-up-down2{
   }
   .grid-image{
     display: block;
-    width: 95%;
+    width: 357px;
     height: 200px;
   }
   .overlay{
@@ -934,6 +987,7 @@ div.image-up-down2{
     transform: none;
   }
   .populaire{
+    width: 100%;
     display: block;
     position: relative;
     margin-top: 70px;
@@ -968,7 +1022,7 @@ div.image-up-down2{
   /* activites*/
 
   section#second-part{
-    margin-top: 1700px;
+    margin-top: 1400px;
   }
   .gallery-activites:hover{
     transition: none;
@@ -987,6 +1041,13 @@ div.image-up-down2{
     display: block;
     width: 100%;
   }
+  div.image-up-down1{
+    display: block;
+  }
+  div.image-up-down2{
+    display: block;
+  }
+  .gallery-activites
   article.gallery-activites{
     width: 100%;
   }
@@ -995,9 +1056,142 @@ div.image-up-down2{
     margin-top: 30px;
   }
   h2.title3{
-    margin: 35px;
+    margin: 10px;
+  }
+  .image-large1{
+    width: 350px;
+    margin-left: 10px;
+    height: 160px;
+    box-shadow: 0 2px 2px 0  #5f5454;
+    margin-right: 0;
+  }
+  .image-large2{
+    width: 350px;
+    margin-left: 10px;
+    height: 140px;
+    box-shadow: 0 2px 2px 0  #5f5454;
+    margin-right: 0;
+  }
+  .grid-image-large1{
+    width: 350px;
+    margin-left: 10px;
+    height: 140px;
+    box-shadow: 0 2px 2px 0  #5f5454;
+    margin-right: 0;
+    margin-top: 50px;
+  }
+  .grid-image-small1{
+    width: 350px;
+    margin-left: 10px;
+    height: 180px;
+    box-shadow: 0 2px 2px 0  #5f5454;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  .grid-image-small2{
+    width: 350px;
+    margin-left: 10px;
+    height: 180px;
+    box-shadow: 0 2px 2px 0  #5f5454;
+    margin-right: 0;
+    margin-top: 50px;
+  }
+  .grid-image-large2{
+    width: 350px;
+    margin-left: 10px;
+    height: 180px;
+    box-shadow: 0 2px 2px 0  #5f5454;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+  div.overlay3-img1{
+    display: block;
+    width: 352px;
+    margin-top: 150px;
+    margin-left: 2%;
+    box-shadow: 2px 2px 0 0 #5f5454;
+  }
+  .overlay3-img2{
+    display: block;
+    width: 352px;
+    margin-top: 100px;
+    margin-left: 2%;
+    box-shadow: 2px 2px 0 0 #5f5454;
+  }
+  .overlay3-img3{
+    display: block;
+    width: 352px;
+    margin-top: 150px;
+    margin-left: 2%;
+    box-shadow: 2px 2px 0 0 #5f5454;
+  }
+  .overlay3-img4{
+    display: block;
+    width: 352px;
+    margin-top: 150px;
+    margin-left: 2%;
+    left: 0;
+    box-shadow: 2px 2px 0 0 #5f5454;
+  }
+  .overlay3-img5{
+    display: block;
+    width: 352px;
+    margin-top: 170px;
+    margin-left: 2%;
+    box-shadow: 2px 2px 0 0 #5f5454;
+  }
+  .overlay3-img6{
+    display: block;
+    width: 352px;
+    margin-top: 150px;
+    margin-left: 2%;
+    box-shadow: 2px 2px 0 0 #5f5454;
+    
+  }
+  section.footer{
+    display: block;
+    padding-left: 10px;
+    margin-top: 730px;
+    padding-bottom: 20px;
+  }
+  .colonne2{
+    padding-top: 10px;
+  }
+  .colonne3{
+    padding-top: 10px;
   }
 }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*************DESKTOP*************/
 @media only screen and (min-width: 961px) {
   i.fas.fa-search::before{
