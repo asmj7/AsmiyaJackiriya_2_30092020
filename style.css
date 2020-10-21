@@ -282,18 +282,6 @@ div.hebergements-marseille{
   background-color: #F2F2F2;
   grid-row-gap: 70px;
 }
-.overlay{
-  display: block;
-  background-color: white;
-  border-radius: 0 0 20px 20px;
-  padding-bottom: 10px;
-  position: relative;
-  bottom: 0;
-  width: 240px;
-  margin-right: 0px;
-  margin-top: 120px;
-  box-shadow: 0 4px 4px 0 #656565;;
-}
 h3.caption{
   font-size: 17px;
   padding-left: 15px;
@@ -321,12 +309,24 @@ p.caption{
 .grid-image{
   display: grid;
   object-fit: cover;
-  position: absolute;
   border-radius: 20px;
-  width: 240px;
+  width: 100%;
+  height: 100%;
   height: 140px;
   border: 5px solid white;
   box-shadow: 0 20px 20px 0  #656565;
+}
+.overlay{
+  display: block;
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  padding-bottom: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-right: 0px;
+  margin-top: 0px;
+  box-shadow: 0 4px 4px 0 #656565;;
 }
 .afficher-plus{
   margin-top: 10px;
