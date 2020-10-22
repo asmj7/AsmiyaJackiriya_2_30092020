@@ -309,14 +309,13 @@ p.caption{
 .grid-image{
   display: grid;
   object-fit: cover;
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
   width: 100%;
-  height: 100%;
-  height: 140px;
+  height: 75%;
   border: 5px solid white;
   box-shadow: 0 20px 20px 0  #656565;
 }
-.overlay{
+.grid-hebergements{
   display: block;
   background-color: white;
   border-radius: 0 0 20px 20px;
@@ -337,82 +336,75 @@ p.caption{
   color: #0065FC;
 }
 /***************ASIDE*****************/
-
 aside{
-  display: grid;
-  position: relative;
-  width: 37%;
-  padding-top: 0px;
-  border-radius: 25px;
-  background-color:#F3F1F1;
-}
-.header2{
   display: flex;
-  width: 100%;
+  width: 36%;
+  background-color: #F2F2F2;
+  border-radius: 35px;
+}
+.populaire{
+  display: block;
+  padding-left: 65px;
+  margin-top: 20px;
+  row-gap: 20px;
+}
+article.gallery-populaire:first-child{
+  width: fit-content;
+  margin-top: 75px;
+}
+article.gallery-populaire:nth-child(n+2){
+  margin-top: 30px;
+}
+div.header2{
+  display: flex;
+  width: 500px;
   height: fit-content;
   position: absolute;
 }
+h2.title-populaire{
+  display: flex;
+  margin-left: 65px;
+  padding: 20px 0;
+  margin-bottom: 0;
+}
 i.fas.fa-chart-line{
   margin-top: 41px;
-  margin-left: 60px;
   display: flex;
   font-size: 25px;
   margin: auto;
-  margin-right: 100px;
-}
-h2.title-populaire{
-  display: flex;
-  margin-left: 55px;
-  padding: 20px 0;
-  
-}
-.populaire{
-  display: grid;
-  position: relative;
-  width: 600px;
-  margin-top: 70px;
-  padding-left: 55px;
-  align-content: left;
-}
-.grid-image2{
-  display: grid;
-  margin-top: 26px;
   position: absolute;
-  object-fit: cover;
-  border-radius: 15px;
-  width: 300px;
-  height: 150px;
-  border: 5px solid white;
-  box-shadow: 0 2px 2px 0  #656565;
+  right: 0;
+  top: 50%;
 }
-/************ ASIDE OVERLAY *************/
-
-.overlay2{
-  display: block;
-  justify-content: left;
+img.grid-image2{
+  display: flex;
+  width: 35%;
+  object-fit: cover;
+  height: 100%;
+  border: 5px solid white;
+  border-radius: 20px 0 0 20px;
+}
+figcaption.grid-populaire{
   background-color: white;
-  position:absolute;
-  border-radius:0 20px 20px 0;
-  width: 260px;
-  height: 150px;
-  z-index: 4;
-  margin-left: 190px;
-  margin-top: 26px;
-  box-shadow: 2px 2px 2px 0  #656565;
+  width: 55%;
+  height: 100%;
+  bottom: 113%;
+  left: 30%;
+  border-radius: 0 20px 20px 0;
+  position: relative;
 }
 h3.caption2{
-  display: flex;
+  display: block;
   color: black;
   padding-left: 15px;
+  padding-top: 15px;
   padding-bottom: 10px;
-  margin-top: 8px;
   margin-bottom: 0;
   width: fit-content;
   height: fit-content;
 }
 p.caption2{
   margin: 0;
-  color: flex;
   display: block;
   padding-bottom: 10px;
   color: black;
@@ -421,7 +413,7 @@ p.caption2{
   height: fit-content;
 }
 .stars2{
-  display: flex;
+  display: block;
   bottom: 0;
   position: absolute;
   padding-bottom: 15px;
@@ -475,11 +467,14 @@ div.left-div{
 article.gallery-activites{
   display: flex;
 }
+h3.caption-activités{
+  height: fit-content;
+}
 .image-large1{
-  display: grid;
+  display: block;
   margin-right: 60px;
   width: 85%;
-  height: 470px;
+  height: 85%;
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 2px 0 2px #D2D3D5;
@@ -530,15 +525,10 @@ article.gallery-activites{
   height: 220px;
   box-shadow: 0 2px 0 2px #D2D3D5;
 }
-div.overlay3-img1{
-  display: flex;
-  position: absolute;
+figcaption.grid-activités{
+  display: block;
   background-color: white;
-  width: 19.8%;
-  height: 60px;
-  margin-top: 412px;
-  border-radius: 0 0 20px 20px;
-  box-shadow: 0 2px 2px 0  #656565;
+  height: 0%;
 }
 div.overlay3-img2{
   display: flex;
