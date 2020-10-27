@@ -256,7 +256,8 @@ i.fas.fa-info{
   display: flex;
   height: 630px;
   width: 90%;
-  margin: auto;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top: 30px;
 }
 .title-first-part{
@@ -370,7 +371,8 @@ article.gallery-populaire:nth-child(n+2){
 }
 div.header2{
   display: flex;
-  width: 500px;
+  justify-content: space-between;
+  width: 28%;
   height: fit-content;
   position: absolute;
 }
@@ -629,7 +631,11 @@ figcaption.grid-activités6{
   background-color:#F2F2F2;
   padding-top: 30px;
   padding-bottom: 30px;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+div.colonnes{
+  display: flex;
+
 }
 .colonne1, .colonne2, .colonne3{
   display: block;
@@ -674,6 +680,7 @@ figcaption.grid-activités6{
   }
   #first-part{
     width: 100%;
+    margin-left: 0;
     flex-direction: column;
   }
   .gallery-hebergements:hover{
@@ -709,6 +716,9 @@ figcaption.grid-activités6{
   }
   div.populaire{ 
   width: 100%;
+  }
+  div.header2{
+    width: 85%;
   }
   .gallery-populaire:hover{
     transform: none;
@@ -929,6 +939,7 @@ figcaption.grid-activités6{
     width: 100%;
     margin-top: 10px;
     flex-direction: column;
+    margin-left: 0;
   }
   .gallery-hebergements:hover{
     transform:none ;
@@ -1111,42 +1122,6 @@ figcaption.grid-activités6{
     padding-top: 10px;
   }
 }
-/*Other devices*/
-@media only screen and (max-width: 1310px) and (min-width: 1295px) {
-  div.hebergements-marseille{
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*************DESKTOP*************/
 @media only screen and (min-width: 961px) {
@@ -1155,7 +1130,43 @@ figcaption.grid-activités6{
     display: none;
   }
 }
-
+@media only screen and (min-width: 400px){
+  i.fas.fa-search::before{
+    visibility: hidden;
+    display: none;
+  }
+}
+/*Other devices
+@media only screen and (min-width: 1281px) {
+  figcaption.grid-hebergements{
+    height: 108px;
+  }
+  div.hebergements-marseille{
+    grid-row-gap: 90px;
+  }
+}
+*/
+/*
+@media only screen and (min-width: 1100px){
+  div.hebergements-marseille{
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 50px;
+    margin-right: 70px;
+  }
+  .gallery-hebergements:nth-child(-n+3){
+    margin-top: 0;
+  }
+  .gallery-hebergements:nth-child(-n+2){
+    margin-top: 70px;
+  }
+  .gallery-hebergements{
+    width: 85%;
+  }
+  figcaption.grid-hebergements{
+    height: 85px;
+  }
+}
+*/
 
 
 
