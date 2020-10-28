@@ -763,6 +763,24 @@ div.colonnes{
     transform: none;
   }
   /**************activites*******************/
+  .gallery-item1:hover{
+    transform: none;
+  }
+  .gallery-item2:hover{
+    transform: none;
+  }
+  .gallery-item3:hover{
+    transform: none;
+  }
+  .gallery-item4:hover{
+    transform: none;
+  }
+  .gallery-item5:hover{
+    transform: none;
+  }
+  .gallery-item6:hover{
+    transform: none;
+  }
   #second-part{
     width: 100%;
     margin-top: 990px;
@@ -774,95 +792,68 @@ div.colonnes{
     margin-left: 3%;
   }
   article.gallery-activites{ 
-    width: 97%;
+    width: 100%;
     height: fit-content;
   }
-  .gallery-activites:hover{
-    transition: none;
-    transform: none;
-  }
-  div.left-div{
-    display: block;
-    width: 100%;
-  }
-  div.right-div{
-    display: block;
-    width: 100%;
-    margin-top: 420px;
-  }
-  h2.title3{
-    margin: 35px;
-  }
-  .image-large1{
-    width: 100%;
-    height: 240px;
-    box-shadow: 0 2px 2px 0  #5f5454;
-    margin-right: 0;
-  }
-  figcaption.grid-activités1{ 
-    width: 100%;
-    height: 45px;
-  }
-  div.image-up-down1{
-    row-gap: 0px;
-    margin-left: 0;
-  }
-  div.image-up-down2{
-    row-gap: 0px;
-    margin-left: 0;
-  }
-  img.grid-image-large1{
-    width: 100%;
-    height: 240px;
-    margin-top: 30px;
-  }
-  figcaption.grid-activités2{ 
-    width: 100%;
-    height: 45px;
-  }
-  img.grid-image-small1{
-    width: 100%;
-    height: 240px;
+  .gallery-img1{
+    width: 97%;
+    height: 230px;
     box-shadow: 0 2px 2px 0  #5f5454;
     margin-right: 0;
     margin-top: 30px;
   }
-  figcaption.grid-activités3{ 
-    width: 100%;
-    height: 45px;
+  figcaption.grid-activités1{
+    width: 97%;
   }
-  .image-large2{
-    width: 100%;
-    height: 240px;
+  .gallery-img2{
+    width: 97%;
+    height: 230px;
+    margin-top: 30px;
+    box-shadow: 0 2px 2px 0  #5f5454;
+    margin-right: 0px;
+  }
+  figcaption.grid-activités2{
+    width: 97%;
+  }
+  .gallery-img3{
+    width: 97%;
+    height: 230px;
     box-shadow: 0 2px 2px 0  #5f5454;
     margin-right: 0;
     margin-top: 30px;
   }
-  figcaption.grid-activités4{ 
-    width: 100%;
-    height: 45px;
+  figcaption.grid-activités3{
+    width: 97%;
   }
-  .grid-image-small2{
-    width: 100%;
-    height: 240px;
+  .gallery-img4{
+    width: 97%;
+    height: 230px;
+    margin-top: 30px;
     box-shadow: 0 2px 2px 0  #5f5454;
     margin-right: 0;
+  }
+  figcaption.grid-activités4{
+    width: 97%;
+  }
+  .gallery-img5{
+    width: 97%;
+    height: 230px;
     margin-top: 30px;
-  }
-  figcaption.grid-activités5{ 
-    width: 100%;
-    height: 45px;
-  }
-  .grid-image-large2{
-    width: 100%;
-    height: 240px;
     box-shadow: 0 2px 2px 0  #5f5454;
     margin-right: 0;
-    margin-top: 30px;
   }
-  figcaption.grid-activités6{ 
-    width: 100%;
-    height: 45px;
+  figcaption.grid-activités5{
+    width: 97%;
+  }
+  .gallery-img6{
+    width: 97%;
+    height: 230px;
+    margin-top: 30px;
+    box-shadow: 0 2px 2px 0  #5f5454;
+    margin-right: 0;
+  }
+  figcaption.grid-activités6{
+    width: 97%;
   }
   section.footer{
     display: flex;
@@ -875,10 +866,6 @@ div.colonnes{
 }
 /**************FOR IPHONE 8***************/
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-  *{
-    transition: none;
-    transform: none;
-  }
   body{
     width: 100%;
   }
@@ -980,6 +967,9 @@ div.colonnes{
     flex-direction: column;
     margin-left: 0;
   }
+  .gallery-hebergements{
+    width: 97%;
+  }
   .gallery-hebergements:hover{
     transform:none ;
   }
@@ -988,13 +978,12 @@ div.colonnes{
   }
   div.hebergements-marseille{
     display: grid;
-    width: 100%;
+    width: 90%;
     padding-left: 0;
+    grid-template-columns: 100vw;
     padding-top: 10px;
     background-color: white;
-    grid-template-columns: 1fr;
     padding-bottom: 35px;
-    align-items: center;
     padding-right: 0;
     margin-left: 3%;
     row-gap: 90px;
@@ -1003,17 +992,18 @@ div.colonnes{
     background-color: white;
     padding-left: 0;
     margin-left: 17px;
+    width: fit-content;
     position: unset;
   }
   .grid-image{
     display: block;
-    width: 94%;
+    width: 97%;
     height: 90%;
     border-bottom: none;
     box-shadow: 0px 10px 10px 0 #656565;
   }
   figcaption.grid-hebergements{
-    width: 94%;
+    width: 97%;
   }
   .afficher-plus{
     margin-top: 10px;
@@ -1073,10 +1063,6 @@ div.colonnes{
   }
   /* activites*/
 
-  .gallery-activites:hover{
-    transition: none;
-    transform: none;
-  }
   #second-part{
     width: 100%;
     height: fit-content;
@@ -1084,75 +1070,97 @@ div.colonnes{
   }
   div.activites-marseille{
     width: 100%;
-    display: block;
-  }
-  div.left-div{
-    display: block;
-    width: 100%;
-    margin-top: 40px;
     margin-left: 3%;
-  }
-  div.image-up-down1{
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  div.image-up-down2{
     display: block;
   }
-  .gallery-activites
-  article.gallery-activites{
-    width: 100%;
+  .gallery-item1:hover{
+    transform: none;
   }
-  div.right-div{
-    display: block;
-    margin-top: 100px;
-    margin-left: 3%;
+  .gallery-item2:hover{
+    transform: none;
+  }
+  .gallery-item3:hover{
+    transform: none;
+  }
+  .gallery-item4:hover{
+    transform: none;
+  }
+  .gallery-item5:hover{
+    transform: none;
+  }
+  .gallery-item6:hover{
+    transform: none;
   }
   h2.title3{
     margin: 10px;
   }
-  .image-large1{
-    width: 94%;
+  .gallery-img1{
+    width: 97%;
     height: 160px;
     box-shadow: 0 2px 2px 0  #5f5454;
     margin-right: 0;
   }
-  img.grid-image-large1{
-    width: 99%;
+  figcaption.grid-activités1{
+    width: 97%;
+  }
+  .gallery-img2{
+    width: 97%;
     height: 160px;
+    margin-top: 30px;
     box-shadow: 0 2px 2px 0  #5f5454;
     margin-right: 0px;
   }
-  img.grid-image-small1{
-    width: 94%;
+  figcaption.grid-activités2{
+    width: 97%;
+  }
+  .gallery-img3{
+    width: 97%;
     height: 160px;
     box-shadow: 0 2px 2px 0  #5f5454;
     margin-right: 0;
+    margin-top: 30px;
   }
-  .image-large2{
-    width: 99.6%;
+  figcaption.grid-activités3{
+    width: 97%;
+  }
+  .gallery-img4{
+    width: 97%;
     height: 160px;
+    margin-top: 30px;
     box-shadow: 0 2px 2px 0  #5f5454;
     margin-right: 0;
   }
-  .grid-image-small2{
-    width: 99.6%;
+  figcaption.grid-activités4{
+    width: 97%;
+  }
+  .gallery-img5{
+    width: 97%;
     height: 160px;
+    margin-top: 30px;
     box-shadow: 0 2px 2px 0  #5f5454;
     margin-right: 0;
   }
-  .grid-image-large2{
-    width: 99.6%;
+  figcaption.grid-activités5{
+    width: 97%;
+  }
+  .gallery-img6{
+    width: 97%;
     height: 180px;
+    margin-top: 30px;
     box-shadow: 0 2px 2px 0  #5f5454;
     margin-right: 0;
+  }
+  figcaption.grid-activités6{
+    width: 97%;
   }
   section.footer{
     display: block;
     padding-left: 10px;
-    margin-top: 730px;
+    margin-top: 790px;
     padding-bottom: 20px;
+  }
+  div.colonnes{
+    display: block;
   }
   .colonne2{
     padding-top: 10px;
@@ -1175,7 +1183,7 @@ div.colonnes{
     display: none;
   }
 }
-/*Other devices
+/*Other devices*/
 @media only screen and (min-width: 1281px) {
   figcaption.grid-hebergements{
     height: 108px;
@@ -1183,7 +1191,15 @@ div.colonnes{
   div.hebergements-marseille{
     grid-row-gap: 90px;
   }
-}*/
+}
+
+
+
+
+
+
+
+
 
 /*
 @media only screen and (min-width: 1100px){
