@@ -1211,10 +1211,16 @@ div.colonnes{
 }
 
 
-
-
 /*Other devices*/
-@media (max-width: 1340px) {
+@media only screen and (min-width: 1250px) {
+  figcaption.grid-hebergements{
+    height: 108px;
+  }
+  div.hebergements-marseille{
+    grid-row-gap: 40px;
+  }
+}
+@media only screen and (max-width: 1340px) {
   figcaption.grid-hebergements{
     height: 108px;
   }
