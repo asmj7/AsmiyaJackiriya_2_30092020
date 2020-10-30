@@ -242,16 +242,16 @@ h3.filtre-name{
 }
 i.fas.fa-info{
   color: #0065FC;
-  padding: 17px;
-  border-radius: 50%;
+  padding: 6px 11px;
+  border-radius: 50px;
   margin-right: 10px;
   border: 2px solid #F2F2F2;
-
 }
 .info{
   font-weight: 400;
   color: black;
-  padding-bottom: 5px;
+  margin-top: 7px;
+  margin-bottom: 0;
 }
 
 /************ SECTION HEBERGEMETNS A MARSEILLE***********/
@@ -264,14 +264,20 @@ i.fas.fa-info{
   margin-right: 5%;
   margin-top: 30px;
 }
+h2.title{
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
 .title-first-part{
   display: flex;
-  margin-top: 20px;
-  margin-left: 36px;
-  padding-left: 35px;
-  position: absolute;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 0;
+  grid-row-end: 1;
   height: fit-content;
   background-color: #F2F2F2;
+  padding-top: 15px;
 }
 #first-part article{
   display: flex;
@@ -280,9 +286,6 @@ i.fas.fa-info{
 .gallery-hebergements{
   transition: all .2s ease-in-out;
 }
-.gallery-hebergements:nth-child(-n+3){
-  margin-top: 75px;
-}
 .gallery-hebergements:hover{
   transform: scale(1.1);
 }
@@ -290,6 +293,7 @@ i.fas.fa-info{
 div.hebergements-marseille{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   column-gap: 50px;
   width: 60%;
   margin-right: 40px;
@@ -298,7 +302,7 @@ div.hebergements-marseille{
   padding-right: 70px;
   border-radius: 25px;
   background-color: #F2F2F2;
-  grid-row-gap: 70px;
+  grid-row-gap: 30px;
 }
 h3.caption{
   font-size: 17px;
@@ -324,6 +328,9 @@ p.caption{
 #grey{
   color: #C6C7C8;
 }
+.gallery-hebergements:nth-child(-n+3){
+  margin-bottom: 50px;
+}
 .grid-image{
   display: grid;
   object-fit: cover;
@@ -343,13 +350,14 @@ p.caption{
   width: 100%;
   margin-right: 0px;
   margin-top: 0px;
-  box-shadow: 0 4px 4px 0 #656565;;
+  box-shadow: 0 4px 4px 0 #656565;
 }
 .afficher-plus{
   margin-top: 10px;
   font-weight: bold;
   width: fit-content;
   color: black;
+  margin-top: 30px;
 }
 .afficher-plus:hover{
   color: #0065FC;
@@ -357,44 +365,39 @@ p.caption{
 /***************ASIDE*****************/
 aside{
   display: flex;
-  width: 36%;
   background-color: #F2F2F2;
   border-radius: 35px;
 }
 .populaire{
-  display: block;
+  display: grid;
+  grid-template-columns: 1fr;
   padding-left: 65px;
   margin-top: 20px;
-  row-gap: 20px;
+  row-gap: 10px;
+  width: 90%;
 }
 article.gallery-populaire:first-child{
   width: fit-content;
   margin-top: 75px;
 }
-article.gallery-populaire:nth-child(n+2){
-  margin-top: 30px;
-}
 div.header2{
   display: flex;
   justify-content: space-between;
-  width: 28%;
+  width: 100%;
   height: fit-content;
-  position: absolute;
+  padding-top: 15px;
 }
 h2.title-populaire{
   display: flex;
-  margin-left: 65px;
-  padding: 20px 0;
+  padding: 0;
   margin-bottom: 0;
+  margin-top: 0;
 }
 i.fas.fa-chart-line{
-  margin-top: 41px;
   display: flex;
   font-size: 25px;
-  margin: auto;
-  position: absolute;
   right: 0;
-  top: 50%;
+  top: 0%;
 }
 img.grid-image2{
   display: block;
@@ -406,12 +409,13 @@ img.grid-image2{
 }
 figcaption.grid-populaire{
   background-color: white;
-  width: 55%;
+  width: 70%;
+  display: inline-block;
   height: 100%;
-  bottom: 113%;
   left: 30%;
-  border-radius: 0 20px 20px 0;
   position: relative;
+  bottom: 100%;
+  border-radius: 0 20px 20px 0;
 }
 h3.caption2{
   display: block;
@@ -420,6 +424,7 @@ h3.caption2{
   padding-top: 15px;
   padding-bottom: 10px;
   margin-bottom: 0;
+  margin-top: 0;
   width: fit-content;
   height: fit-content;
 }
@@ -435,10 +440,10 @@ p.caption2{
 .stars2{
   display: block;
   bottom: 0;
-  position: absolute;
   padding-bottom: 15px;
   color: #0065FC;
   padding-left: 15px;
+  padding-top: 20px;
 }
 .gallery-populaire{
   transition: all .2s ease-in-out;
@@ -452,27 +457,31 @@ p.caption2{
 /* ACTIVITES A MARSEILLE */
 
 #second-part{
-  display: flex;
+  display: block;
   margin-top: 70px;
-  width: 90%;
-  margin: auto;
-  margin-bottom: 30px;
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 150px;
 }
 h2.title3{
   width: fit-content;
   height: fit-content;
+  margin-top: 0;
+  padding-top: 30px;
 }
 h3.caption-activités{
   margin-top: 0;
   margin-bottom: 0;
   color: black;
+  padding: 10px;
 }
 div.title-second-part{
-  display: flex;
-  position: absolute;
+  display: inline-block;
   width: fit-content;
   height: fit-content;
-  margin-top: 70px;
+  margin-left: 5%;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 div.activites-marseille{
   display: grid;
@@ -480,11 +489,13 @@ div.activites-marseille{
   grid-template-rows: repeat(2, 13vw);
   column-gap: 50px;
   row-gap: 30px;
-  height: 500px;
-  margin-top: 140px;
   margin-bottom: 40px;
+  width: fit-content;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 .gallery-img1{
+  display: block;
   width: 100%;
   height: 100%;
   margin-bottom: 0;
@@ -496,7 +507,7 @@ figcaption.grid-activités1{
   display: block;
   background-color: white;
   margin-top: 0;
-  height: 11%;
+  height: 50px;
   border-radius: 15px;
   width: 100%;
   border-radius: 0 0 20px 20px;
@@ -513,16 +524,18 @@ article.gallery-item1{
   transform: scale(1.1);
 }
 .gallery-img2{
+  display: block;
   width: 100%;
   height: 100%;
   border-radius: 20px 20px 0 0 ;
+  box-shadow: 0 4px 8px 0  #656565;
   object-fit: cover;
 }
 figcaption.grid-activités2{
   display: block;
   background-color: white;
   margin-top: 0;
-  height: 23%;
+  height: 50px;
   border-radius: 15px;
   width: 100%;
   border-radius: 0 0 20px 20px;
@@ -539,23 +552,25 @@ figcaption.grid-activités2{
   transform: scale(1.1);
 }
 .gallery-img3{
+  display: block;
   width: 100%;
-  height: 70%;
-  margin-top: 70px;
+  height: 100%;
   border-radius: 20px 20px 0 0 ;
+  box-shadow: 0 4px 8px 0  #656565;
   object-fit: cover;
 }
 figcaption.grid-activités3{
   display: block;
   background-color: white;
   margin-top: 0;
-  height: 23%;
+  height: 50px;
   border-radius: 15px;
   width: 100%;
   border-radius: 0 0 20px 20px;
   box-shadow: 0 3px 3px 0  #656565;
 }
 .gallery-item3{
+  margin-top: 70px;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -565,17 +580,11 @@ figcaption.grid-activités3{
 .gallery-item3:hover{
   transform: scale(1.1);
 }
-.gallery-img1{
-  width: 100%;
-  height: 100%;
-  border-radius: 20px 20px 0 0 ;
-  object-fit: cover;
-}
 figcaption.grid-activités4{
   display: block;
   background-color: white;
   margin-top: 0;
-  height: 11%;
+  height: 50px;
   border-radius: 15px;
   width: 100%;
   border-radius: 0 0 20px 20px;
@@ -592,16 +601,18 @@ figcaption.grid-activités4{
   transform: scale(1.1);
 }
 .gallery-img4{
+  display: block;
   width: 100%;
   height: 100%;
   border-radius: 20px 20px 0 0 ;
+  box-shadow: 0 4px 8px 0  #656565;
   object-fit: cover;
 }
 figcaption.grid-activités5{
   display: block;
   background-color: white;
   margin-top: 0;
-  height: 23%;
+  height: 50px;
   border-radius: 15px;
   width: 100%;
   border-radius: 0 0 20px 20px;
@@ -615,9 +626,11 @@ figcaption.grid-activités5{
   transition: all .2s ease-in-out;
 }
 .gallery-img5{
+  display: block;
   width: 100%;
   height: 70%;
   border-radius: 20px 20px 0 0 ;
+  box-shadow: 0 4px 8px 0  #656565;
   object-fit: cover;
 }
 .gallery-item5:hover{
@@ -627,7 +640,7 @@ figcaption.grid-activités6{
   display: block;
   background-color: white;
   margin-top: 0;
-  height: 23%;
+  height: 50px;
   border-radius: 15px;
   width: 100%;
   border-radius: 0 0 20px 20px;
@@ -644,9 +657,11 @@ figcaption.grid-activités6{
   transform: scale(1.1);
 }
 .gallery-img6{
+  display: block;
   width: 100%;
   height: 100%;
   border-radius: 20px 20px 0 0 ;
+  box-shadow: 0 4px 8px 0  #656565;
   object-fit: cover;
 }
 .footer{
@@ -655,7 +670,8 @@ figcaption.grid-activités6{
   background-color:#F2F2F2;
   padding-top: 30px;
   padding-bottom: 30px;
-  justify-content: space-around;
+  bottom: 0;
+
 }
 .colonne1, .colonne2, .colonne3{
   display: block;
@@ -664,17 +680,12 @@ figcaption.grid-activités6{
 .footer-links{
   color: black;
 }
-
-.footer{
-  display: flex;
-  margin-top: 70px;
-  background-color:#F2F2F2;
-  padding-top: 10px;
-  padding-bottom: 30px;
-}
 div.colonnes{
   display: flex;
-  grid-template-columns: repeat(3fr);
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 5%;
+
 }
 .colonne1, .colonne2, .colonne3{
   display: block;
@@ -725,26 +736,36 @@ div.colonnes{
   .gallery-hebergements:hover{
     transform:none ;
   }
-  .gallery-hebergements:nth-child(-n+3){
+  .gallery-hebergements:nth-child(-n+2){
     margin-top: 0px;
   }
-  .gallery-hebergements:nth-child(-n+2){
-    margin-top: 75px;
+  .gallery-hebergements{
+    margin-bottom: 40px;
   }
   div.hebergements-marseille{
     width: 94%;
     margin-left: 3%;
     margin-right: 3%;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 0.1fr);
     padding-bottom: 35px;
-    row-gap: 100px;
+    row-gap: 30px;
     align-items: center;
   }
-  .overlay{
-    width: 260px;
-  }
+  .title-first-part {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: fit-content;
+    background-color: #F2F2F2;
+}
   h2.title{
-    margin-left: 35px;
+    margin-bottom: 0;
+  }
+  div.afficher-plus{
+    margin-top: 0;
   }
   aside{
     width: 94%;
@@ -865,7 +886,7 @@ div.colonnes{
   }
 }
 /**************FOR IPHONE 8***************/
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 375px)  and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
   body{
     width: 100%;
   }
@@ -1170,8 +1191,9 @@ div.colonnes{
   }
 }
 
-/*************DESKTOP*************/
-@media only screen and (min-width: 961px) {
+/****************DESKTOP****************/
+/***** Removing search icon *******/
+@media only screen and (min-width: 961px){
   i.fas.fa-search::before{
     visibility: hidden;
     display: none;
@@ -1183,45 +1205,24 @@ div.colonnes{
     display: none;
   }
 }
+/******* margin on desktop******/
+@media (max-width: 1310px){
+  
+}
+
+
+
+
 /*Other devices*/
-@media only screen and (min-width: 1281px) {
+@media (max-width: 1340px) {
   figcaption.grid-hebergements{
     height: 108px;
   }
   div.hebergements-marseille{
-    grid-row-gap: 90px;
+    grid-row-gap: 40px;
   }
 }
 
-
-
-
-
-
-
-
-
-/*
-@media only screen and (min-width: 1100px){
-  div.hebergements-marseille{
-    grid-template-columns: repeat(2, 1fr);
-    padding-right: 50px;
-    margin-right: 70px;
-  }
-  .gallery-hebergements:nth-child(-n+3){
-    margin-top: 0;
-  }
-  .gallery-hebergements:nth-child(-n+2){
-    margin-top: 70px;
-  }
-  .gallery-hebergements{
-    width: 85%;
-  }
-  figcaption.grid-hebergements{
-    height: 85px;
-  }
-}
-*/
 
 
 
