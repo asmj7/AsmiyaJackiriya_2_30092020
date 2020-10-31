@@ -691,8 +691,6 @@ figcaption.grid-activités6{
   i.fas.fa-search::before{
     visibility: hidden;
     display: none;
-<<<<<<< HEAD
-=======
   }
 }
 @media only screen and (min-width: 400px){
@@ -756,7 +754,6 @@ figcaption.grid-activités6{
      float: none;
 
      text-align: left;
->>>>>>> Section-activités
   }
 }
 @media only screen and (min-width: 400px){
