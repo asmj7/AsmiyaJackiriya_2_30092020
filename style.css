@@ -183,13 +183,16 @@ h3.filtre-name{
   display: flex;
   font-size: 15px;
   padding-top: 10px;
+  padding-right: 15px;
   margin-top: 0;
   height: fit-content;
   padding-left: 35px;
   padding-bottom: 12px;
   margin-left: 15px;
-  margin-right: 15px;
   color: black;
+}
+.filtre-name:hover{
+  color: white;
 }
 .economic{
   display: flex;
@@ -201,6 +204,9 @@ h3.filtre-name{
   margin-right: 25px;
   margin-bottom: 10px;
 }
+.economic:hover{
+  background-color: #0065FC;
+}
 .family{
   display: flex;
   border-radius: 25px;
@@ -210,6 +216,9 @@ h3.filtre-name{
   font-weight: bold;
   margin-right: 25px;
   margin-bottom: 10px;
+}
+.family:hover{
+  background-color: #0065FC;
 }
 .romantic{
   display: flex;
@@ -222,6 +231,9 @@ h3.filtre-name{
   margin-right: 25px;
   margin-bottom: 10px;
 }
+.romantic:hover{
+  background-color: #0065FC;
+}
 .animals{
   display: flex;
   border-radius: 25px;
@@ -232,8 +244,8 @@ h3.filtre-name{
   font-weight: bold;
   margin-bottom: 10px;
 }
-.filtre-name:hover{
-  color: #0065FC;
+.animals:hover{
+  background-color: #0065FC;
 }
 .information{
   display: flex;
