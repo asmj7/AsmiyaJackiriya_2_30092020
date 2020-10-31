@@ -383,7 +383,7 @@ p.caption{
 aside{
   display: flex;
   background-color: #F2F2F2;
-  border-radius: 35px;
+  border-radius: 25px;
 }
 .populaire{
   display: grid;
