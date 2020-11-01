@@ -125,10 +125,11 @@ a{
 }
 div.filtres{
   display: flex;
-  width: 90%;
-  margin: auto;
+  width: 80%;
+  margin-left: 5%;
   margin-bottom: 30px;
   margin-top: 35px;
+  flex-wrap: wrap;
 }
 h2.filtres{
   margin-right: 25px;
@@ -146,7 +147,7 @@ h2.filtres{
 i.fas.fa-money-bill-wave:before{
   position: absolute;
   color: #0065FC;
-  padding: 11px;
+  padding: 12px 10px;
   border-radius: 30px;
   background-color: #C7DEFF;
   width: fit-content;
@@ -155,7 +156,7 @@ i.fas.fa-money-bill-wave:before{
 i.fas.fa-child:before{
   position: absolute;
   color: #0065FC;
-  padding: 12px;
+  padding: 12px 14px;
   border-radius: 30px;
   background-color: #C7DEFF;
   width: fit-content;
@@ -173,7 +174,7 @@ i.fas.fa-heart:before{
 i.fas.fa-dog:before{
   position: absolute;
   color: #0065FC;
-  padding: 12px;
+  padding: 12px 11px;
   border-radius: 30px;
   background-color: #C7DEFF;
   width: fit-content;
@@ -308,7 +309,7 @@ h2.title{
 div.hebergements-marseille{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 0fr);
   column-gap: 30px;
   width: 95%;
   margin-right: 40px;
@@ -320,7 +321,7 @@ div.hebergements-marseille{
   grid-row-gap: 30px;
 }
 h3.caption{
-  font-size: 15px;
+  font-size: 1.1vw;
   padding-left: 15px;
   margin-bottom: 4px;
   padding-top: 5px;
@@ -355,6 +356,7 @@ p.caption{
   width: 100%;
   height: 75%;
   border: 5px solid white;
+  border-bottom: 0;
   box-shadow: 0 3px 3px 0  #656565;
 }
 .grid-hebergements{
@@ -388,7 +390,7 @@ aside{
 .populaire{
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(1, 6vw);
+  grid-template-rows: repeat(1, 5vw);
   padding-left: 40px;
   margin-top: 20px;
   width: 90%;
@@ -424,6 +426,7 @@ img.grid-image2{
   height: 100%;
   border: 5px solid white;
   border-radius: 20px 0 0 20px;
+  box-shadow: 4px 1px 13px -3px #656565;
 }
 figcaption.grid-populaire{
   background-color: white;
@@ -433,11 +436,12 @@ figcaption.grid-populaire{
   position: relative;
   bottom: 100%;
   border-radius: 0 20px 20px 0;
+  box-shadow: 4px 1px 13px -3px #656565;
 }
 h3.caption2{
   display: block;
   color: black;
-  font-size: 15px;
+  font-size: 1.1vw;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 10px;
@@ -490,7 +494,7 @@ h2.title3{
 }
 h3.caption-activités{
   margin-top: 0;
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 0;
   color: black;
   padding: 10px;
@@ -1226,24 +1230,100 @@ div.colonnes{
   }
 }
 
-/*Other devices
-@media only screen and (min-width: 1250px) {
-  figcaption.grid-hebergements{
-    height: 108px;
-  }
+/*Figcaption resizing*/
+@media screen and (max-width: 1225px) {
   div.hebergements-marseille{
     grid-row-gap: 40px;
+    width: 100%;
+  }
+  div.afficher-plus{
+    padding-top: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
-@media only screen and (max-width: 1340px) {
-  figcaption.grid-hebergements{
-    height: 108px;
+@media screen and (max-width: 1200px) {
+  #first-part{
+    display: block;
   }
-  div.hebergements-marseille{
-    grid-row-gap: 40px;
+  h3.caption{
+    font-size: 14px;
+  }
+  h3.caption2{
+    font-size: 14px;
+  }
+  /****Aside***/
+  aside{
+    margin-top: 30px;
+    height: 40%;
+  }
+  .populaire{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 5vw);
+    width: 100%;
+    padding-right: 40px;
+    column-gap: 20px;
+  }
+  .header2{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    width: 100%;
+  }
+   /****Activités****/
+   #second-part{
+    margin-top: 255px;
+    margin-bottom: 95px;
+  }
+  div.activites-marseille{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 13vw);
+    row-gap: 80px;
+  }
+  article.gallery-item1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .gallery-item2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .gallery-item3{
+    margin-top: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .gallery-item4{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .gallery-item5{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .gallery-img5{
+    height: 100%;
+  }
+  .gallery-item6{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
 }
-*/
+
+
 
 
 
