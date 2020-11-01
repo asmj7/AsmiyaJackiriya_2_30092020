@@ -1229,17 +1229,10 @@ div.colonnes{
     display: none;
   }
 }
-
 /*Figcaption resizing*/
 @media screen and (max-width: 1225px) {
   div.hebergements-marseille{
-    grid-row-gap: 40px;
     width: 100%;
-  }
-  div.afficher-plus{
-    padding-top: 5px;
-    margin-top: 0;
-    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -1321,6 +1314,7 @@ div.colonnes{
     grid-row-start: 3;
     grid-row-end: 4;
   }
+  /****Footer*****/
 }
 
 
