@@ -539,7 +539,6 @@ article.gallery-item1{
   grid-row-start: 1;
   grid-row-end: 3;
   transition: all .2s ease-in-out;
-<<<<<<< HEAD
 }
 .gallery-item1:hover{
   transform: scale(1.1);
@@ -639,8 +638,6 @@ figcaption.grid-activités5{
   border-radius: 0 0 20px 20px;
   box-shadow: 0 3px 3px 0  #656565;
 }
-=======
-}
 .gallery-item1:hover{
   transform: scale(1.1);
 }
@@ -739,7 +736,6 @@ figcaption.grid-activités5{
   border-radius: 0 0 20px 20px;
   box-shadow: 0 3px 3px 0  #656565;
 }
->>>>>>> footer
 .gallery-item5{
   grid-column-start: 4;
   grid-column-end: 5;
@@ -785,7 +781,6 @@ figcaption.grid-activités6{
   border-radius: 20px 20px 0 0 ;
   box-shadow: 0 4px 8px 0  #656565;
   object-fit: cover;
-<<<<<<< HEAD
 }
 
 /****************DESKTOP****************/
@@ -801,9 +796,6 @@ figcaption.grid-activités6{
     visibility: hidden;
     display: none;
   }
-}
-
-=======
 }
 .footer{
   display: flex;
@@ -929,7 +921,6 @@ div.colonnes{
     width: fit-content;
   }
 }
->>>>>>> footer
 
 
 
