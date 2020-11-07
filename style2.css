@@ -249,7 +249,7 @@
     .populaire{
       display: block;
     }
-    figcaption.grid-populaire{
+    div.grid-populaire{
       width: 88%;
     }
     .gallery-populaire{
