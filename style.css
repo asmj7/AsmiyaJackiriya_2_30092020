@@ -150,41 +150,57 @@ h2.filtres{
   display: flex;
   margin-bottom: 15px;
 }
-i.fas.fa-money-bill-wave:before{
+div.icon-container1{
   position: absolute;
-  color: #0065FC;
-  padding: 12px 10px;
-  border-radius: 30px;
-  background-color: #DBEAFF;
-  width: fit-content;
-  height: fit-content;
-}
-i.fas.fa-child:before{
-  position: absolute;
-  color: #0065FC;
-  padding: 12px 14px;
-  border-radius: 30px;
-  background-color: #DBEAFF;
-  width: fit-content;
-  height: fit-content;
-}
-i.fas.fa-heart:before{
-  position: absolute;
-  color: #0065FC;
-  padding: 12px;
-  border-radius: 30px;
-  background-color: #DBEAFF;
-  width: fit-content;
-  height: fit-content;
-}
-i.fas.fa-dog:before{
-  position: absolute;
-  color: #0065FC;
   padding: 12px 11px;
-  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
   background-color: #DBEAFF;
-  width: fit-content;
-  height: fit-content;
+  margin: -2px;
+}
+div.icon-container2{
+  position: absolute;
+  padding: 12px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #DBEAFF;
+  margin: -2px;
+}
+div.icon-container3{
+  position: absolute;
+  padding: 12px 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #DBEAFF;
+  margin: -2px;
+}
+div.icon-container4{
+  position: absolute;
+  padding: 12px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #DBEAFF;
+  margin: -2px;
+}
+i.fas.fa-money-bill-wave::before{
+  color: #0065FC;
+}
+i.fas.fa-child::before{
+  color: #0065FC;
+}
+i.fas.fa-heart::before{
+  color: #0065FC;
+}
+i.fas.fa-dog::before{
+  color: #0065FC;
 }
 h3.filtre-name{
   display: flex;
@@ -303,7 +319,7 @@ h2.title{
 }
 .gallery-hebergements{
   transition: all .2s ease-in-out;
-  display: flex;
+  display: block;
   height: 125px;
 }
 .gallery-hebergements:hover{
@@ -352,7 +368,7 @@ p.caption{
   padding-top: 5px;
   font-size: 14px;
 }
-#grey{
+#grey1, #grey2, #grey3, #grey4, #grey5, #grey6, #grey7{
   color: #C6C7C8;
 }
 .gallery-hebergements:nth-child(-n+3){
@@ -406,7 +422,7 @@ aside{
   width: 90%;
 }
 .gallery-populaire{
-  display: flex;
+  display: block;
   height: 125px;
 }
 article.gallery-populaire:first-child{
