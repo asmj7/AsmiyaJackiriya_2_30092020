@@ -58,7 +58,7 @@
       grid-template-rows: repeat(3, 13vw);
       row-gap: 80px;
     }
-    article.gallery-item1{
+    div.gallery-item1{
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 1;
