@@ -9,6 +9,10 @@
  body{
    margin:auto;
  }
+ .container{
+   width: 1346px;
+   margin: auto;
+ }
 header.header{
   display: flex;
   width: 90%;
@@ -308,6 +312,9 @@ i.fas.fa-info{
   margin-right: 5%;
   margin-top: 30px;
 }
+div.grid-first-part{
+  width: 100%;
+}
 h2.title{
   margin-bottom: 0;
   margin-top: 0;
@@ -333,14 +340,13 @@ h2.title{
 }
 div.grid-first-part{
   display: grid;
-  grid-template-columns: auto auto auto auto auto ;
+  grid-template-columns: auto auto auto auto;
 }
 div.hebergements-marseille{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 0fr);
   column-gap: 30px;
-  width: 95%;
   margin-right: 40px;
   padding-left: 40px;
   padding-top: 20px;
@@ -348,11 +354,10 @@ div.hebergements-marseille{
   border-radius: 25px;
   background-color: #F2F2F2;
   grid-row-gap: 30px;
-  grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column: 1/4;
 }
 h3.caption{
-  font-size: 1.1vw;
+  font-size: 14px;
   padding-left: 15px;
   margin-bottom: 4px;
   padding-top: 5px;
@@ -428,7 +433,7 @@ aside{
   width: 90%;
 }
 .gallery-populaire{
-  display: block;
+  display: flex;
   height: 125px;
 }
 div.gallery-populaire:first-child{
@@ -461,23 +466,24 @@ img.grid-image2{
   object-fit: cover;
   height: 100%;
   border: 5px solid white;
+  border-right: 0;
   border-radius: 20px 0 0 20px;
   box-shadow: 4px 1px 13px -3px #656565;
 }
 div.grid-populaire{
   background-color: white;
   width: 63%;
+  display: flex;
   height: 100%;
   left: 37%;
-  position: relative;
   bottom: 100%;
   border-radius: 0 20px 20px 0;
-  box-shadow: 4px 1px 13px -3px #656565;
+  box-shadow: 2px 2px 6px -2px #656565;
 }
 h3.caption2{
   display: block;
   color: black;
-  font-size: 1.1vw;
+  font-size: 15px;
   padding-left: 15px;
   padding-top: 15px;
   padding-bottom: 10px;
@@ -502,7 +508,6 @@ p.caption2{
   padding-bottom: 10px;
   color: #0065FC;
   padding-left: 15px;
-  position: absolute;
 }
 .gallery-populaire{
   transition: all .2s ease-in-out;
