@@ -114,11 +114,11 @@
     .colonne2, .colonne3{
       margin-top: 40px;
     }
-    article.gallery-populaire:hover{
+    div.gallery-populaire:hover{
       transition: none;
       transform: none;
     }
-  article.gallery-hebergements:hover{
+  div.gallery-hebergements:hover{
     transition: none;
       transform: none;
   }
