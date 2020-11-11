@@ -101,6 +101,7 @@ input{
  height: 45px;
  padding: 0 25px;
  border: 2px solid #F2F2F2;
+ border-right: 0;
 }
 .search-button{
   background-color: #0065FC;
@@ -743,14 +744,14 @@ div.grid-activités6{
 }
 div.colonnes{
   display: flex;
-  justify-content: space-between;
-  width: 60%;
-  margin-left: 5%;
-
+  width: 1205px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .colonne1, .colonne2, .colonne3{
   display: block;
   height: fit-content;
+  width: 26%;
 }
 .footer-links{
   color: black;

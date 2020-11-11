@@ -5,9 +5,32 @@
       display: none;
     }
   }
+  @media screen and (min-width: 5000px) and (max-width: 6000px){
+    div.activites-marseille{
+      grid-template-rows: repeat(2, 4vw);
+    }
+    h3.filtre-name{
+      padding-top: 3px;
+    }
+  }
+  @media screen and (min-width: 3000px) and (max-width: 4100px){
+    div.activites-marseille{
+      grid-template-rows: repeat(2, 6vw);
+    }
+  }
+  @media screen and (min-width: 2680px) and (max-width: 3000px){
+    div.activites-marseille{
+      grid-template-rows: repeat(2, 8vw);
+    }
+  }
   @media screen and (max-width: 1370px){
     .container{
       width: unset;
+    }
+  }
+  @media screen and (max-width: 1350px){
+    div.colonnes{
+      margin-left: 5%;
     }
   }
   /*Figcaption resizing*/
@@ -110,6 +133,9 @@
   @media screen and (max-width: 930px){
     div.colonnes{
       display: block;
+    }
+    .colonne1, .colonne2, .colonne3{
+      width: auto;
     }
     .colonne2, .colonne3{
       margin-top: 40px;
