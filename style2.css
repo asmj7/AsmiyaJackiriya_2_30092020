@@ -5,7 +5,7 @@
       display: none;
     }
   }
-  @media screen and (min-width: 5000px) and (max-width: 6000px){
+  @media screen and (min-width: 4300px) and (max-width: 6000px){
     div.activites-marseille{
       grid-template-rows: repeat(2, 4vw);
     }
