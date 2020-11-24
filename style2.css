@@ -129,13 +129,16 @@
       grid-row-end: 4;
     }
     /****Footer*****/
+    .colonne1, .colonne2, .colonne3{
+      width: 300px;
+    }
   }
   @media screen and (max-width: 930px){
     div.colonnes{
       display: block;
     }
     .colonne1, .colonne2, .colonne3{
-      width: auto;
+      width: fit-content;
     }
     .colonne2, .colonne3{
       margin-top: 40px;
@@ -187,7 +190,7 @@
     }
     .populaire{
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(3, 6vw);
+      grid-template-rows: auto auto auto;
     }
     div.header2{
       grid-column-start: 1;
@@ -212,7 +215,6 @@
       grid-column-end: 4;
       grid-row-start: 3;
       grid-row-end: 4;
-      margin-top: 100px;
     }
     #second-part{
       margin-top: 415px;
