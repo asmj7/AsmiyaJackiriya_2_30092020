@@ -34,7 +34,7 @@
     }
   }
   /*Figcaption resizing*/
-  @media screen and (max-width: 1251px) {
+  @media screen and (max-width : 1251px) {
     #first-part{
         display: block;
       }
@@ -306,6 +306,7 @@
   @media screen and (max-width: 635px) {
     div.activites-marseille{
       display: block;
+      width: unset;
     }
     .gallery-img1, .gallery-img2, .gallery-img3, .gallery-img4, .gallery-img5, .gallery-img6{
       height: 145px;
