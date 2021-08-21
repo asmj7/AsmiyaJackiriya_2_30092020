@@ -517,7 +517,6 @@ p.caption2{
 }
 .gallery-populaire{
   transition: all .2s ease-in-out;
-  width: fit-content;
 }
 .gallery-populaire:hover{
   transform: scale(1.1);
