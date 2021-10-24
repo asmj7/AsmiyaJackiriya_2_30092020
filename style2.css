@@ -66,7 +66,7 @@
     }
     .populaire{
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 5vw);
+      grid-template-rows: repeat(1, 5vw);
       width: 100%;
       padding-right: 40px;
       column-gap: 20px;
