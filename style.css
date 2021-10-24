@@ -433,10 +433,6 @@ aside{
   margin-top: 20px;
   width: 90%;
 }
-.gallery-populaire{
-  display: flex;
-  height: 125px;
-}
 div.gallery-populaire:first-child{
   width: fit-content;
   margin-top: 75px;
@@ -517,7 +513,9 @@ p.caption2{
 }
 .gallery-populaire{
   transition: all .2s ease-in-out;
-  width: fit-content;
+  display: flex;
+  height: 125px;
+  width: unset;
 }
 .gallery-populaire:hover{
   transform: scale(1.1);
@@ -561,7 +559,7 @@ div.activites-marseille{
   column-gap: 50px;
   row-gap: 30px;
   margin-bottom: 40px;
-  width: fit-content;
+  /* width: fit-content; */
   margin-right: 5%;
   margin-left: 5%;
 }
